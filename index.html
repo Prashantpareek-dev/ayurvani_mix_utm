@@ -1,0 +1,3836 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AyurVani Capsules — बच्चों के लिए Daily Ayurvedic Wellness Support | SS Herbal</title>
+    <meta name="description"
+        content="AyurVani Capsules — SS Herbal द्वारा बच्चों के लिए एक daily Ayurvedic wellness supplement। Brahmi, Ashwagandha, Amla जैसी herbs के साथ बच्चों की रोज़मर्रा wellness, calm और healthy growth को support करने के लिए।">
+    <meta property="og:title" content="AyurVani Capsules — Daily Ayurvedic Wellness for Growing Kids">
+    <meta property="og:description"
+        content="Brahmi, Ashwagandha, Amla और अन्य herbs के साथ बच्चों की daily wellness का supportive Ayurvedic formulation।">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700;800&family=Sora:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --green-900: #132a17;
+            --green-800: #1c3d21;
+            --green-700: #245029;
+            --green-600: #2f6a34;
+            --green-500: #3d8b43;
+            --green-400: #5aa85f;
+            --leaf: #7cbd6b;
+            --mint: #e8f2e2;
+            --cream: #f7f4ea;
+            --ivory: #fdfbf4;
+            --gold: #d9a441;
+            --gold-soft: #e8c37a;
+            --charcoal: #25302a;
+            --text: #2c352e;
+            --muted: #5d6b60;
+            --line: #e2ddcd;
+            --cta: #d9a441;
+            --cta-hover: #c6902f;
+            --shadow: 0 18px 50px -18px rgba(19, 42, 23, .45);
+            --shadow-sm: 0 8px 24px -12px rgba(19, 42, 23, .35);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+
+        html {
+            scroll-behavior: smooth
+        }
+
+        body {
+            font-family: 'Noto Sans Devanagari', 'Sora', sans-serif;
+            color: var(--text);
+            background: var(--ivory);
+            line-height: 1.75;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1,
+        h2,
+        h3,
+        .brandfont {
+            font-family: 'Sora', 'Noto Sans Devanagari', sans-serif;
+            line-height: 1.25
+        }
+
+        img {
+            max-width: 100%;
+            display: block
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit
+        }
+
+        .wrap {
+            max-width: 1160px;
+            margin: 0 auto;
+            padding: 0 20px
+        }
+
+        /* ===== Scroll progress ===== */
+        #progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 3px;
+            width: 0;
+            background: linear-gradient(90deg, var(--green-500), var(--gold));
+            z-index: 200;
+            transition: width .1s linear
+        }
+
+        /* ===== Announce bar ===== */
+        .announce {
+            background: var(--green-900);
+            color: var(--gold-soft);
+            text-align: center;
+            font-size: 13px;
+            padding: 7px 14px;
+            letter-spacing: .2px;
+            font-weight: 500
+        }
+
+        /* ===== Header ===== */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(253, 251, 244, .92);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--line)
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 20px;
+            max-width: 1160px;
+            margin: 0 auto
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 9px;
+            font-weight: 800;
+            font-size: 19px;
+            color: var(--green-800);
+            font-family: 'Sora', sans-serif
+        }
+
+        .logo .mark {
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            background: var(--green-700);
+            display: grid;
+            place-items: center;
+            color: var(--gold-soft)
+        }
+
+        .logo small {
+            display: block;
+            font-size: 10px;
+            font-weight: 600;
+            color: var(--muted);
+            letter-spacing: 2px
+        }
+
+        .nav-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            background: var(--cta);
+            color: #3a2a06;
+            padding: 10px 18px;
+            border-radius: 40px;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 1;
+            white-space: nowrap;
+            box-shadow: 0 8px 20px -10px rgba(217, 164, 65, .9);
+            transition: transform .2s, background .2s
+        }
+
+        .nav-cta:hover {
+            background: var(--cta-hover);
+            transform: translateY(-1px)
+        }
+
+
+        /* ===== Buttons ===== */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 9px;
+            font-weight: 700;
+            border-radius: 44px;
+            cursor: pointer;
+            border: none;
+            font-family: 'Noto Sans Devanagari', 'Sora', sans-serif;
+            transition: transform .2s, box-shadow .2s, background .2s;
+            min-height: 52px;
+            padding: 0 26px;
+            font-size: 15.5px
+        }
+
+        .btn-primary {
+            background: var(--cta);
+            color: #3a2a06;
+            box-shadow: 0 10px 26px -10px rgba(217, 164, 65, .8)
+        }
+
+        .btn-primary:hover {
+            background: var(--cta-hover);
+            transform: translateY(-2px)
+        }
+
+        .btn-ghost {
+            background: transparent;
+            color: var(--green-800);
+            border: 2px solid var(--green-600)
+        }
+
+        .btn-ghost:hover {
+            background: var(--green-700);
+            color: #fff
+        }
+
+        .btn-white {
+            background: #fff;
+            color: var(--green-800)
+        }
+
+        .btn-white:hover {
+            transform: translateY(-2px)
+        }
+
+        /* ===== Section basics ===== */
+        section {
+            position: relative
+        }
+
+        .pad {
+            padding: 14px 0
+        }
+
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--green-600);
+            margin-bottom: 14px
+        }
+
+        .eyebrow::before {
+            content: "";
+            width: 26px;
+            height: 2px;
+            background: var(--gold);
+            display: inline-block
+        }
+
+        .h2 {
+            font-size: clamp(26px, 4.4vw, 40px);
+            font-weight: 800;
+            color: var(--green-900);
+            letter-spacing: -.5px
+        }
+
+        .lead {
+            font-size: 17px;
+            color: var(--muted);
+            max-width: 640px;
+            margin-top: 14px
+        }
+
+        .center {
+            text-align: center
+        }
+
+        .center .lead {
+            margin-left: auto;
+            margin-right: auto
+        }
+
+        /* clip-path leaf shapes */
+        .blob {
+            position: absolute;
+            pointer-events: none;
+            opacity: .5;
+            z-index: 0
+        }
+
+        /* reveal animation */
+        .reveal {
+            opacity: 0;
+            transform: translateY(28px);
+            transition: opacity .7s cubic-bezier(.2, .7, .2, 1), transform .7s cubic-bezier(.2, .7, .2, 1)
+        }
+
+        .reveal.in {
+            opacity: 1;
+            transform: none
+        }
+
+        .reveal.d1 {
+            transition-delay: .08s
+        }
+
+        .reveal.d2 {
+            transition-delay: .16s
+        }
+
+        .reveal.d3 {
+            transition-delay: .24s
+        }
+
+        .reveal.d4 {
+            transition-delay: .32s
+        }
+
+        /* ===== HERO ===== */
+        .hero {
+            background:
+                radial-gradient(120% 90% at 85% 0%, rgba(122, 189, 107, .25), transparent 55%),
+                linear-gradient(160deg, var(--mint), var(--ivory) 60%);
+            overflow: hidden
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.05fr .95fr;
+            gap: 44px;
+            align-items: center;
+            padding: 56px 0 66px
+        }
+
+        .hero .trust-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #fff;
+            border: 1px solid var(--line);
+            padding: 7px 15px;
+            border-radius: 40px;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--green-700);
+            box-shadow: var(--shadow-sm);
+            margin-bottom: 20px
+        }
+
+        .hero h1 {
+            font-size: clamp(30px, 5.4vw, 50px);
+            font-weight: 800;
+            color: var(--green-900);
+            letter-spacing: -.8px
+        }
+
+        .hero h1 .hl {
+            color: var(--green-600)
+        }
+
+        .hero p.sub {
+            font-size: 18px;
+            color: var(--charcoal);
+            margin-top: 18px;
+            max-width: 520px
+        }
+
+        .hero .microline {
+            margin-top: 14px;
+            font-size: 15px;
+            color: var(--muted);
+            max-width: 520px
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+            margin-top: 28px
+        }
+
+        .hero-badges {
+            display: flex;
+            gap: 22px;
+            margin-top: 30px;
+            flex-wrap: wrap
+        }
+
+        .hero-badges div {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 13.5px;
+            font-weight: 600;
+            color: var(--green-800)
+        }
+
+        .hero-visual {
+            position: relative;
+            display: grid;
+            place-items: center
+        }
+
+        .hero-disc {
+            position: relative;
+            width: min(430px, 92%);
+            aspect-ratio: 1;
+            border-radius: 50%;
+            background:
+                radial-gradient(circle at 50% 42%, #fff, var(--mint) 78%);
+            box-shadow: var(--shadow);
+            display: grid;
+            place-items: center;
+            overflow: hidden
+        }
+
+        .hero-disc::before {
+            content: "";
+            position: absolute;
+            inset: 14px;
+            border-radius: 50%;
+            border: 1px dashed rgba(47, 106, 52, .35)
+        }
+
+        .bottle {
+            width: 60%;
+            filter: drop-shadow(0 24px 30px rgba(19, 42, 23, .45));
+            animation: float 5s ease-in-out infinite;
+            position: relative;
+            z-index: 2
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0)
+            }
+
+            50% {
+                transform: translateY(-14px)
+            }
+        }
+
+        .leaf-accent {
+            position: absolute;
+            width: 80px;
+            opacity: .9;
+            animation: sway 6s ease-in-out infinite
+        }
+
+        @keyframes sway {
+
+            0%,
+            100% {
+                transform: rotate(-4deg)
+            }
+
+            50% {
+                transform: rotate(6deg)
+            }
+        }
+
+        .pack-tag {
+            position: absolute;
+            bottom: 6%;
+            right: 2%;
+            background: #fff;
+            border-radius: 16px;
+            padding: 12px 16px;
+            box-shadow: var(--shadow);
+            z-index: 3;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--green-800)
+        }
+
+        .pack-tag .dot {
+            width: 34px;
+            height: 34px;
+            border-radius: 10px;
+            background: var(--mint);
+            display: grid;
+            place-items: center;
+            color: var(--green-600)
+        }
+
+        @media(max-width:860px) {
+            .hero-grid {
+                grid-template-columns: 1fr;
+                gap: 10px;
+                text-align: left;
+                padding: 36px 0 46px
+            }
+
+            .hero-visual {
+                order: -1;
+                margin-bottom: 8px
+            }
+
+            .hero-cta .btn {
+                flex: 1;
+                min-width: 150px
+            }
+        }
+
+        /* ===== Trust strip ===== */
+        .tstrip {
+            background: var(--green-900);
+            color: #eaf2e5
+        }
+
+        .tstrip .wrap {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 14px 40px;
+            padding: 22px 20px
+        }
+
+        .tstrip .item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 14px;
+            font-weight: 600
+        }
+
+        .tstrip .item svg {
+            color: var(--gold-soft)
+        }
+
+        /* ===== Cards grid ===== */
+        .grid {
+            display: grid;
+            gap: 22px
+        }
+
+        .g3 {
+            grid-template-columns: repeat(3, 1fr)
+        }
+
+        .g2 {
+            grid-template-columns: repeat(2, 1fr)
+        }
+
+        .g4 {
+            grid-template-columns: repeat(4, 1fr)
+        }
+
+        @media(max-width:1024px) {
+            .g3 {
+                grid-template-columns: repeat(2, 1fr)
+            }
+        }
+
+        @media(max-width:860px) {
+
+            .g3,
+            .g4 {
+                grid-template-columns: 1fr
+            }
+
+            .g2 {
+                grid-template-columns: 1fr
+            }
+        }
+
+        .card {
+            background: #fff;
+            border: 1px solid var(--line);
+            border-radius: 20px;
+            padding: 26px 24px;
+            box-shadow: var(--shadow-sm);
+            transition: transform .3s, box-shadow .3s
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow)
+        }
+
+        .ico {
+            width: 52px;
+            height: 52px;
+            border-radius: 14px;
+            background: var(--mint);
+            display: grid;
+            place-items: center;
+            color: var(--green-600);
+            margin-bottom: 16px
+        }
+
+        .ico svg {
+            width: 26px;
+            height: 26px
+        }
+
+        .card h3 {
+            font-size: 18.5px;
+            font-weight: 700;
+            color: var(--green-900);
+            margin-bottom: 8px
+        }
+
+        .card p {
+            font-size: 15px;
+            color: var(--muted)
+        }
+
+
+        /* ===== Media card (inset photo + floating icon + step footer) ===== */
+        .cards-media {
+            justify-items: center;
+            gap: 26px
+        }
+
+        .cards-media .card {
+            width: 100%;
+            max-width: 360px
+        }
+
+        .card.has-media {
+            padding: 10px 10px 0;
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            border-radius: 22px;
+            overflow: visible
+        }
+
+        .card-media {
+            position: relative;
+            aspect-ratio: 16/10;
+            border-radius: 16px;
+            overflow: visible;
+            background: var(--mint)
+        }
+
+        .card-media img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            border-radius: 16px;
+            transition: transform .7s cubic-bezier(.2, .8, .2, 1)
+        }
+
+        .card.has-media:hover .card-media img {
+            transform: scale(1.03)
+        }
+
+        .card.has-media .ico {
+            position: absolute;
+            left: 50%;
+            bottom: -27px;
+            transform: translateX(-50%);
+            width: 54px;
+            height: 54px;
+            border-radius: 50%;
+            margin: 0;
+            z-index: 2;
+            background: var(--mint);
+            border: 4px solid #fff;
+            box-shadow: 0 8px 18px -12px rgba(19, 42, 23, .55);
+            transition: transform .3s
+        }
+
+        .card.has-media:hover .ico {
+            transform: translateX(-50%) translateY(-3px)
+        }
+
+        .card.has-media .ico svg {
+            width: 24px;
+            height: 24px
+        }
+
+        .card-body {
+            padding: 40px 14px 16px;
+            flex: 1;
+            display: flex;
+            flex-direction: column
+        }
+
+        .card.has-media h3 {
+            font-size: 19px;
+            font-weight: 800;
+            letter-spacing: -.3px;
+            margin-bottom: 8px
+        }
+
+        .card-num {
+            color: var(--green-500)
+        }
+
+        .card.has-media p {
+            font-size: 14.5px;
+            line-height: 1.65
+        }
+
+        .card-foot {
+            margin-top: auto;
+            padding-top: 16px;
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            align-items: center
+        }
+
+        .card-dots {
+            grid-column: 2;
+            display: flex;
+            gap: 6px;
+            align-items: center
+        }
+
+        .card-dots i {
+            width: 16px;
+            height: 5px;
+            border-radius: 3px;
+            background: #e3e8dd;
+            transition: background .3s, width .3s
+        }
+
+        .card-dots i.on {
+            width: 26px;
+            background: var(--green-500)
+        }
+
+        .card-go {
+            grid-column: 3;
+            justify-self: end;
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            background: var(--mint);
+            color: var(--green-600);
+            transition: background .3s, color .3s, transform .3s
+        }
+
+        .card-go svg {
+            width: 19px;
+            height: 19px
+        }
+
+        .card-go:hover,
+        .card-go:focus-visible {
+            background: var(--green-500);
+            color: #fff;
+            transform: translateX(3px)
+        }
+
+        @media(max-width:520px) {
+            .cards-media .card {
+                max-width: 400px
+            }
+
+            .card-media {
+                aspect-ratio: 16/11
+            }
+        }
+
+        /* problems bg */
+        .soft {
+            background: linear-gradient(180deg, var(--cream), var(--ivory))
+        }
+
+        /* ===== Emotion band ===== */
+        .emotion {
+            background:
+                linear-gradient(180deg, var(--green-800), var(--green-900));
+            color: #eef5ea;
+            overflow: hidden
+        }
+
+        .emotion .wrap {
+            display: grid;
+            grid-template-columns: .9fr 1.1fr;
+            gap: 44px;
+            align-items: center;
+            padding: 70px 20px
+        }
+
+        .emotion .visual {
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            position: relative;
+            aspect-ratio: 1/1;
+            background:
+                radial-gradient(circle at 30% 30%, var(--green-600), var(--green-800));
+            clip-path: polygon(0 0, 100% 0, 100% 88%, 88% 100%, 0 100%)
+        }
+
+        .emotion .visual img {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+            transition: transform .8s cubic-bezier(.2, .8, .2, 1)
+        }
+
+        .emotion .visual:hover img {
+            transform: scale(1.04)
+        }
+
+        .emotion .visual.has-img::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            z-index: 2;
+            background: linear-gradient(180deg, rgba(19, 42, 23, 0) 45%, rgba(19, 42, 23, .45));
+            pointer-events: none
+        }
+
+        .emotion .visual.has-img .ph {
+            display: none
+        }
+
+        .emotion .visual .ph {
+            position: absolute;
+            inset: 0;
+            display: grid;
+            place-items: center;
+            color: rgba(255, 255, 255, .35)
+        }
+
+        .emotion h2 {
+            font-size: clamp(24px, 4vw, 36px);
+            font-weight: 800;
+            color: #fff;
+            letter-spacing: -.5px
+        }
+
+        .emotion .steps {
+            margin-top: 22px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px
+        }
+
+        .emotion .steps div {
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+            font-size: 16px;
+            color: #dcece0;
+            opacity: .9
+        }
+
+        .emotion .steps svg {
+            flex-shrink: 0;
+            margin-top: 4px;
+            color: var(--gold-soft)
+        }
+
+        .emotion .quote {
+            margin-top: 26px;
+            font-size: clamp(20px, 3.2vw, 27px);
+            font-weight: 700;
+            color: var(--gold-soft);
+            font-family: 'Sora', sans-serif;
+            line-height: 1.4
+        }
+
+        .emotion .after {
+            margin-top: 16px;
+            font-size: 15px;
+            color: #c4d6c8;
+            max-width: 560px
+        }
+
+        @media(max-width:860px) {
+            .emotion .wrap {
+                grid-template-columns: 1fr;
+                gap: 26px;
+                padding: 52px 20px
+            }
+        }
+
+        /* ===== Ingredient section ===== */
+        .ing-hero {
+            background: linear-gradient(160deg, var(--green-700), var(--green-900));
+            color: #fff;
+            border-radius: 26px;
+            overflow: hidden;
+            position: relative
+        }
+
+        .ing-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px
+        }
+
+        @media(max-width:860px) {
+            .ing-grid {
+                grid-template-columns: repeat(2, 1fr)
+            }
+        }
+
+        .ing-card {
+            background: rgba(255, 255, 255, .06);
+            border: 1px solid rgba(255, 255, 255, .14);
+            border-radius: 18px;
+            padding: 20px 16px;
+            text-align: center;
+            transition: background .3s, transform .3s
+        }
+
+        .ing-card:hover {
+            background: rgba(255, 255, 255, .12);
+            transform: translateY(-5px)
+        }
+
+        .ing-card .circle {
+            width: 78px;
+            height: 78px;
+            border-radius: 50%;
+            background: var(--mint);
+            margin: 0 auto 14px;
+            display: grid;
+            place-items: center;
+            color: var(--green-700);
+            overflow: hidden;
+            transition: transform .3s
+        }
+
+        .ing-card .circle.photo {
+            background: #fff;
+            box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .5)
+        }
+
+        .ing-card .circle.photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            padding: 7px;
+            display: block
+        }
+
+        .ing-card:hover .circle {
+            transform: scale(1.06)
+        }
+
+        .ing-card h4 {
+            font-size: 16px;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 4px
+        }
+
+        .ing-card p {
+            font-size: 13px;
+            color: #cfe0d3;
+            line-height: 1.55
+        }
+
+        /* ===== How to use ===== */
+        .steps-row {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 28px;
+            position: relative
+        }
+
+        @media(max-width:860px) {
+            .steps-row {
+                grid-template-columns: 1fr
+            }
+        }
+
+        .step {
+            background: #fff;
+            border: 1px solid var(--line);
+            border-radius: 30px;
+            padding: 22px 24px 0;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 26px 60px -32px rgba(19, 42, 23, .45);
+            transition: transform .35s ease, box-shadow .35s ease
+        }
+
+        .step:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 34px 70px -32px rgba(19, 42, 23, .5)
+        }
+
+        /* number badge + spark lines */
+        .step .num {
+            position: absolute;
+            top: 20px;
+            left: 24px;
+            z-index: 3;
+            background: var(--green-800);
+            color: #fff;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            font-weight: 800;
+            font-size: 18px;
+            letter-spacing: .5px;
+            font-family: 'Sora', sans-serif;
+            box-shadow: 0 0 0 7px #eaf2e3
+        }
+
+        .step .spark {
+            position: absolute;
+            top: 24px;
+            left: 88px;
+            z-index: 3;
+            width: 22px;
+            height: 22px;
+            color: var(--green-700)
+        }
+
+        .step .dots {
+            position: absolute;
+            top: 26px;
+            right: 24px;
+            z-index: 3;
+            width: 74px;
+            height: 46px;
+            background-image: radial-gradient(circle, #c4dab7 2px, transparent 2.1px);
+            background-size: 13px 12px
+        }
+
+        /* photo + soft blobs */
+        .step .shot {
+            position: relative;
+            margin: 36px 0 0
+        }
+
+        .step .shot .blob {
+            position: absolute;
+            z-index: 0;
+            width: 44%;
+            height: 46%;
+            background: #dcead2;
+            border-radius: 28px
+        }
+
+        .step .shot .b1 {
+            top: -16px;
+            right: -16px
+        }
+
+        .step .shot .b2 {
+            left: -16px;
+            bottom: -16px
+        }
+
+        .step .shot-in {
+            position: relative;
+            z-index: 1;
+            border-radius: 20px;
+            overflow: hidden;
+            aspect-ratio: 16 / 10;
+            background: #eef3ee
+        }
+
+        .step .shot-in img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform .55s ease
+        }
+
+        .step:hover .shot-in img {
+            transform: scale(1.06)
+        }
+
+        /* icon + text */
+        .step-body {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            padding: 30px 0 32px;
+            flex: 1
+        }
+
+        .step .ico {
+            width: 58px;
+            height: 58px;
+            flex: none;
+            border-radius: 50%;
+            background: #e6f0de;
+            color: var(--green-800);
+            margin: 4px 0 0
+        }
+
+        .step .ico svg {
+            width: 26px;
+            height: 26px
+        }
+
+        .step-txt {
+            border-left: 3px solid var(--green-600);
+            padding-left: 18px;
+            min-width: 0
+        }
+
+        .step h3 {
+            font-size: 23px;
+            line-height: 1.2;
+            font-weight: 800;
+            color: var(--green-800);
+            margin: 0
+        }
+
+        .step h3::after {
+            content: "";
+            display: block;
+            width: 56px;
+            height: 4px;
+            border-radius: 3px;
+            background: var(--green-500);
+            margin: 13px 0
+        }
+
+        .step-txt p {
+            margin: 0;
+            font-size: 14.5px;
+            line-height: 1.75;
+            color: var(--muted)
+        }
+
+        /* curved footer band + leaf seal */
+        .step-foot {
+            position: relative;
+            height: 58px;
+            margin: auto -24px 0
+        }
+
+        .step-foot svg.curve {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            display: block
+        }
+
+        .step-foot .leaf {
+            position: absolute;
+            left: 50%;
+            top: 24px;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: #fff;
+            border: 1px solid #cfe0c4;
+            display: grid;
+            place-items: center;
+            color: var(--green-600)
+        }
+
+        .step-foot .leaf svg {
+            width: 21px;
+            height: 21px
+        }
+
+        @media(max-width:520px) {
+            .step {
+                padding: 20px 18px 0;
+                border-radius: 26px
+            }
+
+            .step .num {
+                width: 46px;
+                height: 46px;
+                font-size: 17px;
+                left: 18px;
+                box-shadow: 0 0 0 6px #eaf2e3
+            }
+
+            .step .spark {
+                left: 76px;
+                top: 22px;
+                width: 20px;
+                height: 20px
+            }
+
+            .step .dots {
+                width: 62px;
+                height: 40px;
+                right: 20px
+            }
+
+            .step .shot {
+                margin-top: 36px
+            }
+
+            .step-body {
+                gap: 14px;
+                padding: 28px 0 30px
+            }
+
+            .step .ico {
+                width: 52px;
+                height: 52px
+            }
+
+            .step .ico svg {
+                width: 24px;
+                height: 24px
+            }
+
+            .step-txt {
+                padding-left: 16px
+            }
+
+            .step h3 {
+                font-size: 21px
+            }
+
+            .step h3::after {
+                margin: 12px 0
+            }
+
+            .step-txt p {
+                font-size: 14px
+            }
+
+            .step-foot {
+                margin: auto -18px 0
+            }
+        }
+
+        /* ===== Disclaimer / notice box ===== */
+        .notice {
+            background: var(--mint);
+            border: 1px solid #cfe0bf;
+            border-left: 5px solid var(--green-600);
+            border-radius: 14px;
+            padding: 22px 24px;
+            display: flex;
+            gap: 16px;
+            align-items: flex-start
+        }
+
+        .notice svg {
+            flex-shrink: 0;
+            color: var(--green-600);
+            margin-top: 2px
+        }
+
+        .notice p {
+            font-size: 15px;
+            color: var(--green-900);
+            font-weight: 500
+        }
+
+        .notice.warn {
+            background: #fbf3e3;
+            border-color: #ecd8a8;
+            border-left-color: var(--gold)
+        }
+
+        .notice.warn svg {
+            color: var(--gold)
+        }
+
+        .notice.warn p {
+            color: #6b5418
+        }
+
+        /* ===== Professional guidance ===== */
+        .guide-shot {
+            position: relative;
+            border-radius: 24px;
+            overflow: hidden;
+            border: 1px solid var(--line);
+            box-shadow: var(--shadow);
+            background: var(--mint);
+            aspect-ratio: 4/5;
+            display: flex;
+            align-items: center;
+            justify-content: center
+        }
+
+        .guide-shot img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 50% 20%;
+            display: block
+        }
+
+        .guide-shot.is-missing img {
+            display: none
+        }
+
+        .guide-empty {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            color: var(--green-700);
+            font-size: 14px;
+            font-weight: 600;
+            text-align: center;
+            padding: 20px
+        }
+
+        .guide-shot.is-missing .guide-empty {
+            display: flex
+        }
+
+        .flow {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-top: 30px
+        }
+
+        .flow span {
+            background: #fff;
+            border: 1px solid var(--line);
+            border-radius: 999px;
+            padding: 10px 20px;
+            font-weight: 700;
+            font-size: 14.5px;
+            color: var(--green-800);
+            box-shadow: var(--shadow-sm)
+        }
+
+        .flow i {
+            color: var(--gold);
+            font-style: normal;
+            font-weight: 800
+        }
+
+        .gcard {
+            background: #fff;
+            border: 1px solid var(--line);
+            border-radius: 18px;
+            padding: 22px;
+            box-shadow: var(--shadow-sm)
+        }
+
+        .gcard h3 {
+            font-size: 16.5px;
+            color: var(--green-900);
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 9px
+        }
+
+        .gcard h3 svg {
+            color: var(--green-600);
+            flex-shrink: 0
+        }
+
+        .gcard p {
+            font-size: 14.5px;
+            color: var(--muted);
+            line-height: 1.75
+        }
+
+        @media(max-width:760px) {
+            .guide-shot {
+                aspect-ratio: 4/5
+            }
+        }
+
+        /* ===== Offer ===== */
+        .offer {
+            background: linear-gradient(160deg, var(--green-800), var(--green-900));
+            color: #fff;
+            border-radius: 28px;
+            overflow: hidden;
+            position: relative
+        }
+
+        .offer-grid {
+            display: grid;
+            grid-template-columns: .9fr 1.1fr;
+            gap: 36px;
+            align-items: center;
+            padding: 44px 40px
+        }
+
+        @media(max-width:860px) {
+            .offer-grid {
+                grid-template-columns: 1fr;
+                padding: 34px 24px;
+                text-align: center
+            }
+        }
+
+        .offer .disc-visual {
+            aspect-ratio: 1;
+            max-width: 320px;
+            margin: 0 auto;
+            border-radius: 50%;
+            background: radial-gradient(circle at 50% 40%, #fff, var(--mint) 80%);
+            display: grid;
+            place-items: center;
+            box-shadow: var(--shadow)
+        }
+
+        .offer .disc-visual img {
+            width: 58%;
+            filter: drop-shadow(0 18px 24px rgba(0, 0, 0, .4))
+        }
+
+        .price-row {
+            display: flex;
+            align-items: baseline;
+            gap: 14px;
+            margin: 12px 0 6px;
+            flex-wrap: wrap
+        }
+
+        .offer .mrp {
+            font-size: 20px;
+            color: #b7c9bb;
+            text-decoration: line-through
+        }
+
+        .offer .now {
+            font-size: 44px;
+            font-weight: 800;
+            color: var(--gold-soft);
+            font-family: 'Sora', sans-serif
+        }
+
+        .offer .save {
+            background: var(--gold);
+            color: #3a2a06;
+            font-weight: 700;
+            font-size: 13px;
+            padding: 5px 12px;
+            border-radius: 30px
+        }
+
+        .offer ul {
+            margin: 20px 0;
+            display: flex;
+            flex-direction: column;
+            gap: 11px
+        }
+
+        .offer li {
+            list-style: none;
+            display: flex;
+            gap: 11px;
+            align-items: center;
+            font-size: 15.5px;
+            color: #e6f0e8
+        }
+
+        .offer li svg {
+            color: var(--gold-soft);
+            flex-shrink: 0
+        }
+
+        @media(max-width:860px) {
+            .offer li {
+                justify-content: center
+            }
+
+            .price-row {
+                justify-content: center
+            }
+        }
+
+        /* ===== Testimonials ===== */
+        .tcard {
+            background: #fff;
+            border: 1px solid var(--line);
+            border-radius: 22px;
+            padding: 28px 26px 24px;
+            box-shadow: 0 22px 46px -26px rgba(19, 42, 23, .38);
+            display: flex;
+            flex-direction: column;
+            transition: transform .35s, box-shadow .35s
+        }
+
+        .tcard:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 28px 56px -26px rgba(19, 42, 23, .45)
+        }
+
+        .tc-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 14px;
+            padding-bottom: 16px;
+            border-bottom: 1.5px dashed #dfe6d3
+        }
+
+        .tcard .stars {
+            color: var(--gold);
+            letter-spacing: 5px;
+            font-size: 19px;
+            margin: 0;
+            line-height: 1
+        }
+
+        .tc-mark {
+            flex: none;
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            background: var(--green-700);
+            color: #fff
+        }
+
+        .tc-mark svg {
+            width: 20px;
+            height: 20px
+        }
+
+        .tcard blockquote {
+            position: relative;
+            margin: 0;
+            padding: 26px 6px 22px 34px;
+            font-size: 15.5px;
+            line-height: 1.95;
+            font-style: italic;
+            color: var(--text)
+        }
+
+        .tcard blockquote::before,
+        .tcard blockquote::after {
+            position: absolute;
+            font-family: Georgia, 'Playfair Display', serif;
+            font-size: 62px;
+            line-height: 1;
+            color: #a9bd96;
+            font-style: normal
+        }
+
+        .tcard blockquote::before {
+            content: "“";
+            left: 0;
+            top: 14px
+        }
+
+        .tcard blockquote::after {
+            content: "”";
+            right: 2px;
+            bottom: -8px
+        }
+
+        .tcard blockquote .hl {
+            color: var(--green-600);
+            font-weight: 700;
+            font-style: italic
+        }
+
+        .tcard .who {
+            margin-top: auto;
+            padding-top: 20px;
+            border-top: 1px solid var(--line);
+            display: flex;
+            align-items: center;
+            gap: 14px
+        }
+
+        .tcard .av {
+            width: 62px;
+            height: 62px;
+            flex: none;
+            border-radius: 50%;
+            background: var(--mint);
+            display: grid;
+            place-items: center;
+            color: var(--green-600);
+            font-weight: 700
+        }
+
+        .tcard .av.photo {
+            overflow: hidden;
+            border: 2px solid #cfe0c0;
+            box-shadow: 0 6px 16px -8px rgba(19, 42, 23, .55)
+        }
+
+        .tcard .av.photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block
+        }
+
+        .who-meta b {
+            display: block;
+            font-size: 16.5px;
+            font-weight: 800;
+            color: var(--green-900);
+            letter-spacing: -.2px
+        }
+
+        .who-meta small {
+            display: block;
+            color: var(--muted);
+            font-size: 13px;
+            margin-top: 1px
+        }
+
+        .tc-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            margin-top: 8px;
+            padding: 5px 11px;
+            border-radius: 999px;
+            background: var(--mint);
+            color: var(--green-700);
+            font-size: 12.5px;
+            font-weight: 600
+        }
+
+        .tc-pill svg {
+            width: 14px;
+            height: 14px
+        }
+
+        /* ===== FAQ ===== */
+        .faq-item {
+            background: #fff;
+            border: 1px solid var(--line);
+            border-radius: 16px;
+            margin-bottom: 14px;
+            overflow: hidden;
+            transition: box-shadow .3s
+        }
+
+        .faq-item.open {
+            box-shadow: var(--shadow-sm)
+        }
+
+        .faq-q {
+            width: 100%;
+            text-align: left;
+            background: none;
+            border: none;
+            padding: 20px 22px;
+            font-size: 16.5px;
+            font-weight: 700;
+            color: var(--green-900);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+            font-family: 'Noto Sans Devanagari', 'Sora', sans-serif
+        }
+
+        .faq-q .pm {
+            flex-shrink: 0;
+            width: 30px;
+            height: 30px;
+            border-radius: 8px;
+            background: var(--mint);
+            display: grid;
+            place-items: center;
+            color: var(--green-600);
+            transition: transform .3s
+        }
+
+        .faq-item.open .pm {
+            transform: rotate(45deg)
+        }
+
+        .faq-a {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height .4s ease
+        }
+
+        .faq-a p {
+            padding: 0 22px 20px;
+            font-size: 15px;
+            color: var(--muted)
+        }
+
+        /* ===== Form ===== */
+        .formsec {
+            background: linear-gradient(160deg, var(--mint), var(--ivory))
+        }
+
+        .formcard {
+            background: #fff;
+            border: 1px solid var(--line);
+            border-radius: 24px;
+            padding: 38px 34px;
+            box-shadow: var(--shadow);
+            max-width: 620px;
+            margin: 0 auto
+        }
+
+        .formcard label {
+            display: block;
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--green-900);
+            margin-bottom: 7px
+        }
+
+        .formcard input {
+            width: 100%;
+            padding: 14px 16px;
+            border: 1.5px solid var(--line);
+            border-radius: 12px;
+            font-size: 15px;
+            font-family: inherit;
+            margin-bottom: 18px;
+            background: var(--ivory);
+            transition: border .2s
+        }
+
+        .formcard input:focus {
+            outline: none;
+            border-color: var(--green-500)
+        }
+
+        .interest-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-bottom: 22px
+        }
+
+        @media(max-width:560px) {
+            .interest-grid {
+                grid-template-columns: repeat(2, 1fr)
+            }
+        }
+
+        .chip {
+            border: 1.5px solid var(--line);
+            border-radius: 12px;
+            padding: 12px 10px;
+            text-align: center;
+            font-size: 13.5px;
+            font-weight: 600;
+            color: var(--charcoal);
+            cursor: pointer;
+            background: var(--ivory);
+            transition: .2s;
+            user-select: none
+        }
+
+        .chip.sel {
+            border-color: var(--green-500);
+            background: var(--mint);
+            color: var(--green-800)
+        }
+
+        .form-trust {
+            display: flex;
+            gap: 10px;
+            align-items: flex-start;
+            margin-top: 16px;
+            font-size: 13px;
+            color: var(--muted)
+        }
+
+        .form-trust svg {
+            flex-shrink: 0;
+            color: var(--green-600);
+            margin-top: 2px
+        }
+
+        /* ===== CTA band ===== */
+        .ctaband {
+            background:
+                radial-gradient(100% 120% at 80% 10%, rgba(122, 189, 107, .3), transparent 50%),
+                linear-gradient(160deg, var(--green-700), var(--green-900));
+            color: #fff;
+            text-align: center;
+            overflow: hidden;
+            position: relative
+        }
+
+        .ctaband h2 {
+            font-size: clamp(26px, 4.4vw, 40px);
+            color: #fff;
+            font-weight: 800;
+            max-width: 800px;
+            margin: 0 auto
+        }
+
+        .ctaband p {
+            color: #d3e4d7;
+            max-width: 620px;
+            margin: 16px auto 0;
+            font-size: 17px
+        }
+
+        .ctaband .btns {
+            display: flex;
+            gap: 14px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px
+        }
+
+        .ctaband .micro {
+            margin-top: 22px;
+            font-size: 13.5px;
+            color: #b7cabb;
+            letter-spacing: .3px
+        }
+
+        /* ===== Footer ===== */
+        footer {
+            background: var(--green-900);
+            color: #c9d8cd;
+            padding: 1px 0 78px;
+        }
+
+        .foot-grid {
+            display: grid;
+            grid-template-columns: 1.4fr 1fr 1fr;
+            gap: 36px
+        }
+
+        @media(max-width:760px) {
+            .foot-grid {
+                grid-template-columns: 1fr;
+                gap: 26px
+            }
+        }
+
+        footer h4 {
+            color: #fff;
+            font-size: 15px;
+            margin-bottom: 14px;
+            font-family: 'Sora', sans-serif
+        }
+
+        footer a {
+            display: block;
+            font-size: 14px;
+            color: #a9bdae;
+            margin-bottom: 9px;
+            transition: color .2s
+        }
+
+        footer a:hover {
+            color: var(--gold-soft)
+        }
+
+        .foot-disc {
+            border-top: 1px solid rgba(255, 255, 255, .12);
+            margin-top: 36px;
+            padding-top: 24px;
+            font-size: 12.5px;
+            color: #8ba492;
+            line-height: 1.7
+        }
+
+        /* ===== Sticky mobile CTA ===== */
+        .sticky-cta {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 150;
+            background: var(--ivory);
+            border-top: 1px solid var(--line);
+            padding: 10px 14px;
+            box-shadow: 0 -8px 24px -12px rgba(0, 0, 0, .25)
+        }
+
+        .sticky-cta .btn {
+            width: 100%
+        }
+
+        @media(max-width:860px) {
+            .sticky-cta {
+                display: block
+            }
+        }
+
+        /* whatsapp float */
+        .wa {
+            position: fixed;
+            right: 16px;
+            bottom: 78px;
+            z-index: 140;
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            background: #25d366;
+            display: grid;
+            place-items: center;
+            box-shadow: var(--shadow);
+            color: #fff
+        }
+
+        @media(min-width:861px) {
+            .wa {
+                bottom: 20px
+            }
+        }
+
+        /* ===== Policy links + modals ===== */
+        .pl-wrap {
+            max-width: 450px;
+            width: 100%;
+            margin: 22px auto 0;
+            padding: 8px 12px;
+            box-sizing: border-box
+        }
+
+        .pl-row {
+            display: flex;
+            gap: 0;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center
+        }
+
+        .pl-link {
+            background: none;
+            border: none;
+            font-size: 11px;
+            line-height: 1.4;
+            font-weight: 500;
+            color: #a9bdae;
+            cursor: pointer;
+            padding: 4px 5px;
+            text-decoration: underline;
+            text-underline-offset: 2px;
+            font-family: inherit;
+            white-space: nowrap;
+            transition: color .15s
+        }
+
+        .pl-link:hover {
+            color: var(--gold-soft)
+        }
+
+        .pl-sep {
+            color: rgba(255, 255, 255, .22);
+            font-size: 11px;
+            user-select: none
+        }
+
+        .pp-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, .45);
+            z-index: 9999;
+            align-items: center;
+            justify-content: center;
+            padding: 16px
+        }
+
+        .pp-overlay.show {
+            display: flex
+        }
+
+        .pp-modal {
+            background: #fff;
+            border-radius: 18px;
+            max-width: 420px;
+            width: 100%;
+            max-height: 80vh;
+            overflow-y: auto;
+            padding: 22px 18px 18px;
+            position: relative;
+            color: var(--text);
+            box-shadow: var(--shadow)
+        }
+
+        .pp-close {
+            position: absolute;
+            top: 14px;
+            right: 14px;
+            background: var(--mint);
+            border: none;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            color: var(--green-700);
+            transition: background .15s
+        }
+
+        .pp-close:hover {
+            background: #cfe2c6
+        }
+
+        .pp-mtitle {
+            font-family: 'Sora', 'Noto Sans Devanagari', sans-serif;
+            font-size: 17px;
+            font-weight: 700;
+            color: var(--green-800);
+            margin-bottom: 6px;
+            padding-right: 36px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            line-height: 1.3
+        }
+
+        .pp-mtitle svg {
+            flex: 0 0 auto;
+            color: var(--green-600)
+        }
+
+        .pp-mbadge {
+            display: inline-block;
+            background: var(--mint);
+            color: var(--green-700);
+            font-size: 11px;
+            font-weight: 600;
+            padding: 2px 10px;
+            border-radius: 999px;
+            margin-bottom: 12px
+        }
+
+        .pp-mpara {
+            font-size: 14px;
+            color: var(--text);
+            line-height: 1.7;
+            margin-bottom: 10px
+        }
+
+        .pp-mlist {
+            padding-left: 0;
+            list-style: none;
+            margin: 0 0 10px
+        }
+
+        .pp-mlist li {
+            font-size: 14px;
+            color: var(--text);
+            line-height: 1.6;
+            padding: 5px 0 5px 20px;
+            position: relative;
+            border-bottom: 1px dashed var(--line)
+        }
+
+        .pp-mlist li:last-child {
+            border-bottom: none
+        }
+
+        .pp-mlist li::before {
+            content: "";
+            position: absolute;
+            left: 4px;
+            top: 13px;
+            width: 7px;
+            height: 7px;
+            background: var(--leaf);
+            border-radius: 50%
+        }
+
+        .pp-mhl {
+            background: var(--mint);
+            border-left: 3px solid var(--green-600);
+            border-radius: 0 8px 8px 0;
+            padding: 9px 13px;
+            font-size: 13px;
+            color: var(--green-800);
+            margin-bottom: 10px;
+            line-height: 1.7
+        }
+
+        .pp-cgrid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            margin-top: 8px
+        }
+
+        .pp-citem {
+            background: var(--cream);
+            border: 1px solid var(--line);
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center
+        }
+
+        .pp-citem svg {
+            color: var(--green-600);
+            display: block;
+            margin: 0 auto 4px
+        }
+
+        .pp-citem .pp-clbl {
+            font-size: 11px;
+            color: var(--muted);
+            margin-bottom: 2px
+        }
+
+        .pp-citem .pp-cval {
+            font-size: 11px;
+            font-weight: 600;
+            color: var(--green-800);
+            word-break: break-word
+        }
+
+        @media(max-width:480px) {
+            .pl-wrap {
+                padding: 8px 4px
+            }
+
+            .pl-row {
+                flex-wrap: wrap;
+                row-gap: 2px
+            }
+
+            .pl-link {
+                font-size: 10.5px;
+                padding: 4px 4px
+            }
+
+            .pl-sep {
+                font-size: 10px
+            }
+
+            .pp-modal {
+                padding: 20px 14px 16px;
+                max-height: 85vh
+            }
+        }
+
+        /* =========================================================
+   450px APP FRAME — page is a single 450px column,
+   centered on desktop, edge-to-edge on mobile.
+   Everything below is unconditional: the frame is never
+   wider than 450px, so the old viewport media queries
+   can no longer be relied on.
+   ========================================================= */
+        html {
+            background:
+                radial-gradient(90% 60% at 50% 0%, rgba(122, 189, 107, .18), transparent 60%),
+                linear-gradient(160deg, #eef3e9, #e4ece0 55%, #dfe8da);
+            background-attachment: fixed;
+            min-height: 100%
+        }
+
+        body {
+            max-width: 450px;
+            width: 100%;
+            margin: 0 auto;
+            background: var(--ivory);
+            position: relative;
+            box-shadow: 0 0 0 1px rgba(19, 42, 23, .07), 0 30px 80px -30px rgba(19, 42, 23, .45)
+        }
+
+        .wrap {
+            max-width: 100%;
+            padding: 0 18px
+        }
+
+        .nav {
+            max-width: 100%;
+            padding: 12px 18px
+        }
+
+        /* scroll progress rides the top of the frame */
+        #progress-track {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 450px;
+            height: 3px;
+            z-index: 200;
+            pointer-events: none
+        }
+
+        #progress {
+            position: static;
+            height: 100%;
+            width: 0
+        }
+
+        /* ---- typography tuned for a narrow column ---- */
+        .h2 {
+            font-size: 27px;
+            letter-spacing: -.4px
+        }
+
+        .hero h1 {
+            font-size: 31px;
+            letter-spacing: -.5px
+        }
+
+        .hero p.sub {
+            font-size: 16.5px
+        }
+
+        .hero .microline {
+            font-size: 14.5px
+        }
+
+        .lead {
+            font-size: 16px
+        }
+
+        .emotion h2 {
+            font-size: 25px
+        }
+
+        .emotion .quote {
+            font-size: 20px
+        }
+
+        .ctaband h2 {
+            font-size: 26px
+        }
+
+        .ctaband p {
+            font-size: 16px
+        }
+
+        .faq-q {
+            font-size: 15.5px;
+            padding: 17px 18px
+        }
+
+        .pad {
+            padding: 14px 0
+        }
+
+        /* ---- single-column layout everywhere ---- */
+        .hero-grid {
+            grid-template-columns: 1fr;
+            gap: 10px;
+            text-align: left;
+            padding: 30px 0 42px
+        }
+
+        .hero-visual {
+            order: -1;
+            margin-bottom: 8px
+        }
+
+        .hero-cta {
+            gap: 10px
+        }
+
+        .hero-cta .btn {
+            flex: 1;
+            min-width: 150px
+        }
+
+        .hero-badges {
+            gap: 14px 18px;
+            margin-top: 24px
+        }
+
+        .hero-disc {
+            width: min(300px, 86%)
+        }
+
+        .g2,
+        .g3,
+        .g4 {
+            grid-template-columns: 1fr
+        }
+
+        .emotion .wrap {
+            grid-template-columns: 1fr;
+            gap: 24px;
+            padding: 44px 18px
+        }
+
+        .ing-grid {
+            grid-template-columns: repeat(2, 1fr)
+        }
+
+        .steps-row {
+            grid-template-columns: 1fr
+        }
+
+        .offer-grid {
+            grid-template-columns: 1fr;
+            padding: 30px 20px;
+            text-align: center
+        }
+
+        .offer li {
+            justify-content: center
+        }
+
+        .price-row {
+            justify-content: center
+        }
+
+        .offer .disc-visual {
+            max-width: 230px
+        }
+
+        .interest-grid {
+            grid-template-columns: repeat(2, 1fr)
+        }
+
+        .formcard {
+            padding: 26px 20px;
+            border-radius: 20px
+        }
+
+        .foot-grid {
+            grid-template-columns: 1fr;
+            gap: 24px
+        }
+
+        .tstrip .wrap {
+            gap: 12px 22px;
+            padding: 20px 18px
+        }
+
+        /* ---- fixed UI pinned to the frame, not the viewport ---- */
+        .sticky-cta {
+            display: block;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 450px
+        }
+
+        .wa {
+            right: max(16px, calc(50vw - 225px + 16px));
+            bottom: 78px
+        }
+
+        /* ---- policy bar inside the frame ---- */
+        .pl-row {
+            flex-wrap: wrap;
+            row-gap: 2px
+        }
+
+        .pl-link {
+            font-size: 10.5px;
+            padding: 4px 4px
+        }
+
+        .pl-sep {
+            font-size: 10px
+        }
+
+        @media(max-width:480px) {
+            body {
+                box-shadow: none
+            }
+
+            .wrap {
+                padding: 0 16px
+            }
+
+            .nav {
+                padding: 12px 16px
+            }
+
+            .h2 {
+                font-size: 25px
+            }
+
+            .hero h1 {
+                font-size: 29px
+            }
+
+            .pad {
+                padding: 14px 0
+            }
+        }
+
+        /* ===== Order form (name + mobile only) ===== */
+        .fgroup {
+            margin-bottom: 16px
+        }
+
+        .formcard .fgroup input {
+            margin-bottom: 0
+        }
+
+        .formcard .req {
+            color: #c0392b
+        }
+
+        .phone-wrap {
+            display: flex;
+            align-items: stretch;
+            border: 1.5px solid var(--line);
+            border-radius: 12px;
+            background: var(--ivory);
+            overflow: hidden;
+            transition: border .2s
+        }
+
+        .phone-wrap .cc {
+            display: flex;
+            align-items: center;
+            padding: 0 12px;
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--green-800);
+            background: var(--mint);
+            border-right: 1.5px solid var(--line)
+        }
+
+        .phone-wrap input {
+            border: none;
+            background: transparent;
+            letter-spacing: .5px
+        }
+
+        .phone-wrap:focus-within {
+            border-color: var(--green-500)
+        }
+
+        .field-error {
+            display: none;
+            margin-top: 7px;
+            font-size: 12.5px;
+            font-weight: 600;
+            color: #c0392b;
+            line-height: 1.5
+        }
+
+        .formcard input.invalid,
+        .phone-wrap.invalid {
+            border-color: #e0796b;
+            background: #fdf4f2
+        }
+
+        .formcard input.invalid {
+            background: #fdf4f2
+        }
+
+        .phone-wrap.invalid input {
+            background: transparent
+        }
+
+        #orderSubmit[disabled] {
+            opacity: .65;
+            cursor: not-allowed;
+            transform: none
+        }
+
+        /* ===== Submitting state ===== */
+        .blurred {
+            filter: blur(5px);
+            pointer-events: none;
+            user-select: none;
+            transition: filter .25s
+        }
+
+        #loadingOverlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            z-index: 10000;
+            background: rgba(19, 42, 23, .35);
+            backdrop-filter: blur(2px);
+            align-items: center;
+            justify-content: center;
+            padding: 20px
+        }
+
+        #loadingOverlay.show {
+            display: flex
+        }
+
+        .ld-card {
+            background: #fff;
+            border-radius: 20px;
+            padding: 28px 24px;
+            width: 100%;
+            max-width: 300px;
+            text-align: center;
+            box-shadow: var(--shadow)
+        }
+
+        .ld-spin {
+            width: 44px;
+            height: 44px;
+            margin: 0 auto 16px;
+            border: 4px solid var(--mint);
+            border-top-color: var(--green-600);
+            border-radius: 50%;
+            animation: ldspin .8s linear infinite
+        }
+
+        @keyframes ldspin {
+            to {
+                transform: rotate(360deg)
+            }
+        }
+
+        .ld-title {
+            font-family: 'Sora', 'Noto Sans Devanagari', sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--green-800);
+            margin-bottom: 4px
+        }
+
+        .ld-sub {
+            font-size: 13px;
+            color: var(--muted);
+            line-height: 1.6
+        }
+
+        /* sticky CTA is hidden while the order is submitting */
+        .sticky-cta {
+            display: none
+        }
+
+        .sticky-cta.show {
+            display: block
+        }
+
+        /* ===== Full-bleed designed image bands (intro / comparison / trust) ===== */
+        .img-band {
+            display: block;
+            padding: 0;
+            margin: 0;
+            background: var(--ivory);
+            line-height: 0
+        }
+
+        .img-band img {
+            display: block;
+            width: 100%;
+            height: auto;
+            margin: 0;
+            border-radius: 0;
+            box-shadow: none
+        }
+
+</style>
+</head>
+
+<body>
+    <div id="app-root">
+        <div id="progress-track">
+            <div id="progress"></div>
+        </div>
+
+        <div class="announce">100% Ayurvedic Formulation · AYUSH-licensed Manufacturing · COD & Easy Support Available
+        </div>
+
+        <!-- HERO -->
+        <section class="hero" id="top">
+            <img src="./images/hook1.avif" alt="">
+            <img src="./images/hook2.avif" alt="">
+        </section>
+
+        <!-- EVERYDAY WELLNESS AREAS (reframed problems) -->
+        <section class="pad soft" id="why">
+            <div class="wrap center">
+                <div class="eyebrow reveal">Daily Wellness</div>
+                <h2 class="h2 reveal">बढ़ते बच्चों की रोज़मर्रा wellness के कई पहलू होते हैं</h2>
+                <p class="lead reveal d1">पढ़ाई, नींद, energy, mood और immunity — हर हिस्सा बच्चे के दिन को प्रभावित
+                    करता
+                    है। AyurVani इन everyday wellness areas को एक herbal तरीके से support करने के लिए बनाया गया है।</p>
+            </div>
+            <div class="wrap grid g3 cards-media" style="margin-top:44px">
+                <article class="card has-media reveal">
+                    <div class="card-media">
+                        <img src="./images/1.avif" width="450" height="450" loading="eager" decoding="async" alt="Focus & Concentration — AyurVani Ayurvedic daily wellness support for growing kids">
+                        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 1.98-3A2.5 2.5 0 0 1 9.5 2Z" />
+                            <path
+                                d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-1.98-3A2.5 2.5 0 0 0 14.5 2Z" />
+                        </svg></div>
+                    </div>
+                    <div class="card-body">
+                        <h3><span class="card-num">1.</span> Focus &amp; Concentration</h3>
+                        <p>Study time, homework और daily activities के दौरान बच्चे की everyday mental calm और focus को
+                        support
+                        करने के लिए।</p>
+                        <div class="card-foot">
+                            <span class="card-dots" aria-hidden="true">
+                                <i class="on"></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                            </span>
+                            <a class="card-go" href="#intro" aria-label="Focus and Concentration — और जानें">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14" />
+                                    <path d="m12 5 7 7-7 7" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="card has-media reveal d1">
+                    <div class="card-media">
+                        <img src="./images/2.avif" width="450" height="450" loading="eager" decoding="async" alt="Calm & Balanced Mood — AyurVani Ayurvedic daily wellness support for growing kids">
+                        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                        </svg></div>
+                    </div>
+                    <div class="card-body">
+                        <h3><span class="card-num">2.</span> Calm &amp; Balanced Mood</h3>
+                        <p>Jatamansi और Brahmi जैसी herbs पारंपरिक रूप से mind को शांत रखने में इस्तेमाल होती आई हैं।</p>
+                        <div class="card-foot">
+                            <span class="card-dots" aria-hidden="true">
+                                <i></i>
+                                <i class="on"></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                            </span>
+                            <a class="card-go" href="#intro" aria-label="Calm and Balanced Mood — और जानें">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14" />
+                                    <path d="m12 5 7 7-7 7" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="card has-media reveal d2">
+                    <div class="card-media">
+                        <img src="./images/3.avif" width="450" height="450" loading="lazy" decoding="async" alt="Daily Immunity — AyurVani Ayurvedic daily wellness support for growing kids">
+                        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1Z" />
+                        </svg></div>
+                    </div>
+                    <div class="card-body">
+                        <h3><span class="card-num">3.</span> Daily Immunity</h3>
+                        <p>Amla, Giloy और Haldi antioxidants से भरपूर herbs हैं, जो everyday immunity support के लिए जानी
+                        जाती
+                        हैं।</p>
+                        <div class="card-foot">
+                            <span class="card-dots" aria-hidden="true">
+                                <i></i>
+                                <i></i>
+                                <i class="on"></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                            </span>
+                            <a class="card-go" href="#intro" aria-label="Daily Immunity — और जानें">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14" />
+                                    <path d="m12 5 7 7-7 7" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="card has-media reveal">
+                    <div class="card-media">
+                        <img src="./images/4.avif" width="450" height="450" loading="lazy" decoding="async" alt="Healthy Growth Years — AyurVani Ayurvedic daily wellness support for growing kids">
+                        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2v20" />
+                            <path d="M2 5h20" />
+                            <path d="M3 3v2c0 8.5 4 12 9 12s9-3.5 9-12V3" />
+                        </svg></div>
+                    </div>
+                    <div class="card-body">
+                        <h3><span class="card-num">4.</span> Healthy Growth Years</h3>
+                        <p>Growing years में एक herbal/nutritional wellness support के रूप में, balanced diet के साथ।</p>
+                        <div class="card-foot">
+                            <span class="card-dots" aria-hidden="true">
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i class="on"></i>
+                                <i></i>
+                                <i></i>
+                            </span>
+                            <a class="card-go" href="#intro" aria-label="Healthy Growth Years — और जानें">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14" />
+                                    <path d="m12 5 7 7-7 7" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="card has-media reveal d1">
+                    <div class="card-media">
+                        <img src="./images/5.avif" width="450" height="450" loading="lazy" decoding="async" alt="Digestion Support — AyurVani Ayurvedic daily wellness support for growing kids">
+                        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" />
+                            <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" />
+                        </svg></div>
+                    </div>
+                    <div class="card-body">
+                        <h3><span class="card-num">5.</span> Digestion Support</h3>
+                        <p>Saunth, Pipal और Kali Mirch पारंपरिक रूप से healthy digestion को support करने के लिए इस्तेमाल
+                        होती
+                        हैं।</p>
+                        <div class="card-foot">
+                            <span class="card-dots" aria-hidden="true">
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i class="on"></i>
+                                <i></i>
+                            </span>
+                            <a class="card-go" href="#intro" aria-label="Digestion Support — और जानें">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14" />
+                                    <path d="m12 5 7 7-7 7" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="card has-media reveal d2">
+                    <div class="card-media">
+                        <img src="./images/6.avif" width="450" height="450" loading="lazy" decoding="async" alt="Parent-Guided Routine — AyurVani Ayurvedic daily wellness support for growing kids">
+                        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22c5.5 0 10-4.5 10-10S17.5 2 12 2 2 6.5 2 12s4.5 10 10 10Z" />
+                            <path d="M8 14s1.5 2 4 2 4-2 4-2" />
+                            <path d="M9 9h.01M15 9h.01" />
+                        </svg></div>
+                    </div>
+                    <div class="card-body">
+                        <h3><span class="card-num">6.</span> Parent-Guided Routine</h3>
+                        <p>एक simple daily routine के हिस्से के रूप में, ताकि wellness को manage करना parents के लिए आसान
+                        हो।
+                    </p>
+                        <div class="card-foot">
+                            <span class="card-dots" aria-hidden="true">
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i class="on"></i>
+                            </span>
+                            <a class="card-go" href="#intro" aria-label="Parent-Guided Routine — और जानें">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14" />
+                                    <path d="m12 5 7 7-7 7" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+          
+        </section>
+
+        <!-- EMOTION BAND -->
+        <section class="emotion">
+            <div class="wrap">
+                <div class="visual reveal">
+                    <img src="./images/7.avif" width="450" height="450" loading="lazy" decoding="async"
+                        alt="माता-पिता और बच्चा साथ में — AyurVani के साथ बच्चों की daily herbal wellness routine"
+                        onload="this.closest('.visual').classList.add('has-img')">
+                    <div class="ph">
+                        <svg width="90" height="90" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                            <circle cx="9" cy="7" r="4" />
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                        </svg>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="reveal">हर माता-पिता चाहते हैं कि उनका बच्चा calm रहे, अच्छे से सीखे और स्वस्थ रहकर आगे
+                        बढ़े।
+                    </h2>
+                    <div class="steps">
+                        <div class="reveal d1"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 6 9 17l-5-5" />
+                            </svg>एक balanced daily routine बच्चों के लिए बहुत मायने रखती है।</div>
+                        <div class="reveal d2"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 6 9 17l-5-5" />
+                            </svg>अच्छी नींद, सही खान-पान और थोड़ी herbal support मिलकर wellness बनाती है।</div>
+                        <div class="reveal d3"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 6 9 17l-5-5" />
+                            </svg>बच्चे को डांटने या compare करने के बजाय, उसे समझना और support देना ज़्यादा ज़रूरी है।
+                        </div>
+                    </div>
+                    <p class="quote reveal d2">“मैं अपने बच्चे की daily wellness के लिए एक अच्छा, natural तरीका ढूँढ रहा
+                        हूँ।”</p>
+                    <p class="after reveal d3">AyurVani को उसी सोच के साथ बनाया गया है — एक honest, herbal daily
+                        wellness
+                        supplement, जो एक अच्छी routine का हिस्सा बन सके।</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- AYURVANI INTRODUCTION -->
+        <section class="img-band" id="intro">
+            <img src="./images/intro.avif" width="920" height="1440" loading="lazy" decoding="async"
+                alt="AyurVani Capsules — SS Herbal का Ayurvedic daily wellness supplement, बढ़ते बच्चों की daily routine के लिए">
+        </section>
+
+         <!-- HOW IT WORKS -->
+        <section class="pad soft" id="how">
+            <div class="wrap center">
+                <div class="eyebrow reveal">How It Works</div>
+                <h2 class="h2 reveal">शरीर और मन को support देने के लिए एक balanced approach</h2>
+                <p class="lead reveal d1">AyurVani अकेले काम करने के लिए नहीं — बल्कि एक अच्छी daily routine के साथ
+                    मिलकर
+                    support करने के लिए बनाया गया है।</p>
+            </div>
+            <div class="wrap steps-row" style="margin-top:52px">
+                <div class="step reveal">
+                    <span class="num">01</span>
+                    <svg class="spark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" aria-hidden="true">
+                        <path d="M3.5 6.5 10 3M4 12h7M3.5 17.5 10 21" />
+                    </svg>
+                    <span class="dots" aria-hidden="true"></span>
+                    <div class="shot">
+                        <span class="blob b1" aria-hidden="true"></span>
+                        <span class="blob b2" aria-hidden="true"></span>
+                        <div class="shot-in">
+                            <img src="./images/9.avif" width="450" height="281" loading="lazy" decoding="async"
+                                alt="माता-पिता और बच्चे मिलकर healthy खाना तैयार करते हुए — AyurVani daily routine support">
+                        </div>
+                    </div>
+                    <div class="step-body">
+                        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="4" width="18" height="18" rx="2" />
+                            <path d="M16 2v4M8 2v4M3 10h18" />
+                            </svg></div>
+                        <div class="step-txt">
+                            <h3>Daily Routine</h3>
+                            <p>बच्चे के regular food, sleep, study और play के साथ consistent daily wellness support।</p>
+                        </div>
+                    </div>
+                    <div class="step-foot">
+                        <svg class="curve" viewBox="0 0 400 66" preserveAspectRatio="none" aria-hidden="true">
+                        <path d="M0 8 Q200 42 400 8 L400 66 L0 66 Z" fill="#e7f0df" />
+                    </svg>
+                        <span class="leaf">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" />
+                            <path d="M2 21c0-3 1.85-5.36 5.08-6" />
+                        </svg>
+                        </span>
+                    </div>
+                </div>
+                <div class="step reveal d1">
+                    <span class="num">02</span>
+                    <svg class="spark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" aria-hidden="true">
+                        <path d="M3.5 6.5 10 3M4 12h7M3.5 17.5 10 21" />
+                    </svg>
+                    <span class="dots" aria-hidden="true"></span>
+                    <div class="shot">
+                        <span class="blob b1" aria-hidden="true"></span>
+                        <span class="blob b2" aria-hidden="true"></span>
+                        <div class="shot-in">
+                            <img src="./images/8.avif" width="450" height="281" loading="lazy" decoding="async"
+                                alt="मुस्कुराते parents अपने बच्चे को fresh salad खिलाते हुए — herbal और nutritional support">
+                        </div>
+                    </div>
+                    <div class="step-body">
+                        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" />
+                            </svg></div>
+                        <div class="step-txt">
+                            <h3>Herbal Support</h3>
+                            <p>पारंपरिक herbs का एक balanced blend, जो calm, focus और immunity areas को support करता है।</p>
+                        </div>
+                    </div>
+                    <div class="step-foot">
+                        <svg class="curve" viewBox="0 0 400 66" preserveAspectRatio="none" aria-hidden="true">
+                        <path d="M0 8 Q200 42 400 8 L400 66 L0 66 Z" fill="#e7f0df" />
+                    </svg>
+                        <span class="leaf">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" />
+                            <path d="M2 21c0-3 1.85-5.36 5.08-6" />
+                        </svg>
+                        </span>
+                    </div>
+                </div>
+                <div class="step reveal d2">
+                    <span class="num">03</span>
+                    <svg class="spark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" aria-hidden="true">
+                        <path d="M3.5 6.5 10 3M4 12h7M3.5 17.5 10 21" />
+                    </svg>
+                    <span class="dots" aria-hidden="true"></span>
+                    <div class="shot">
+                        <span class="blob b1" aria-hidden="true"></span>
+                        <span class="blob b2" aria-hidden="true"></span>
+                        <div class="shot-in">
+                            <img src="./images/10.avif" width="450" height="281" loading="lazy" decoding="async"
+                                alt="पार्क में दौड़ते-खेलते बच्चे और पीछे चलते parents — everyday wellness और energy">
+                        </div>
+                    </div>
+                    <div class="step-body">
+                        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                            </svg></div>
+                        <div class="step-txt">
+                            <h3>Daily Wellness</h3>
+                            <p>Label पर दिए recommended dosage के अनुसार, नियमित रूप से लेने पर everyday wellness support।</p>
+                        </div>
+                    </div>
+                    <div class="step-foot">
+                        <svg class="curve" viewBox="0 0 400 66" preserveAspectRatio="none" aria-hidden="true">
+                        <path d="M0 8 Q200 42 400 8 L400 66 L0 66 Z" fill="#e7f0df" />
+                    </svg>
+                        <span class="leaf">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" />
+                            <path d="M2 21c0-3 1.85-5.36 5.08-6" />
+                        </svg>
+                        </span>
+                    </div>
+                </div>
+                <div class="step reveal d3">
+                    <span class="num">04</span>
+                    <svg class="spark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" aria-hidden="true">
+                        <path d="M3.5 6.5 10 3M4 12h7M3.5 17.5 10 21" />
+                    </svg>
+                    <span class="dots" aria-hidden="true"></span>
+                    <div class="shot">
+                        <span class="blob b1" aria-hidden="true"></span>
+                        <span class="blob b2" aria-hidden="true"></span>
+                        <div class="shot-in">
+                            <img src="./images/11.avif" width="450" height="281" loading="lazy" decoding="async"
+                                alt="पढ़ाई करते बच्चे के साथ खड़े माता-पिता — complete child support और parental guidance">
+                        </div>
+                    </div>
+                    <div class="step-body">
+                        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+                            </svg></div>
+                        <div class="step-txt">
+                            <h3>Complete Child Support</h3>
+                            <p>एक अच्छी routine, healthy diet और (ज़रूरत होने पर) professional guidance के साथ एक complementary wellness product।</p>
+                        </div>
+                    </div>
+                    <div class="step-foot">
+                        <svg class="curve" viewBox="0 0 400 66" preserveAspectRatio="none" aria-hidden="true">
+                        <path d="M0 8 Q200 42 400 8 L400 66 L0 66 Z" fill="#e7f0df" />
+                    </svg>
+                        <span class="leaf">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" />
+                            <path d="M2 21c0-3 1.85-5.36 5.08-6" />
+                        </svg>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <!-- PROFESSIONAL GUIDANCE -->
+        <section class="pad" id="guidance">
+
+            <div class="wrap center" style="margin-bottom:40px">
+                <div class="eyebrow reveal" style="justify-content:center">Professional Guidance</div>
+                <h2 class="h2 reveal">हर बच्चे के लिए एक ही approach सही नहीं होती</h2>
+                <p class="lead reveal d1">Speech, attention, behaviour या developmental concerns में बच्चे की individual
+                    needs को समझना ज़रूरी है — इसलिए parents को यह क्रम follow करना चाहिए:</p>
+                <div class="flow reveal d2">
+                    <span>Observe</span><i>→</i>
+                    <span>Understand</span><i>→</i>
+                    <span>Assess</span><i>→</i>
+                    <span>Support</span>
+                </div>
+            </div>
+            <div class="wrap">
+                <figure class="guide-shot reveal">
+                    <img src="./images/doctor.avif" width="1122" height="1402" loading="lazy" decoding="async"
+                    alt="Qualified healthcare professional हाथ में AyurVani Capsules की bottle लिए हुए — professional guidance"
+                    onerror="this.parentElement.classList.add('is-missing')">
+                    <figcaption class="guide-empty">
+                        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M8 2v4M16 2v4" />
+                            <path d="M6 6h12a2 2 0 0 1 2 2v3a8 8 0 0 1-16 0V8a2 2 0 0 1 2-2Z" />
+                            <path d="M12 19a3 3 0 0 0 6 0v-2" />
+                        </svg>
+                        Professional guidance photo जल्द ही
+                    </figcaption>
+                </figure>
+            </div>
+            
+            <div class="wrap grid g4" style="margin-top:44px">
+                <div class="gcard reveal">
+                    <h3>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3Z" />
+                            <path d="M19 10v2a7 7 0 0 1-14 0v-2M12 19v4" />
+                        </svg>
+                        Speech Difficulty
+                    </h3>
+                    <p>Speech-Language Pathologist की guidance उपयोगी हो सकती है।</p>
+                </div>
+                <div class="gcard reveal d1">
+                    <h3>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 5a3 3 0 0 0-6 0 3 3 0 0 0-2 5 3 3 0 0 0 2 5 3 3 0 0 0 6 0Z" />
+                            <path d="M12 5a3 3 0 0 1 6 0 3 3 0 0 1 2 5 3 3 0 0 1-2 5 3 3 0 0 1-6 0Z" />
+                        </svg>
+                        ADHD-related Concerns
+                    </h3>
+                    <p>Qualified healthcare / mental-health या developmental specialist का assessment आवश्यक हो सकता है।
+                    </p>
+                </div>
+                <div class="gcard reveal d2">
+                    <h3>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="9" />
+                            <path d="M9 10h.01M15 10h.01M9 15c1.5 1 4.5 1 6 0" />
+                        </svg>
+                        Autism / Developmental
+                    </h3>
+                    <p>Appropriate developmental assessment और multidisciplinary support की ज़रूरत हो सकती है।</p>
+                </div>
+                <div class="gcard reveal d3">
+                    <h3>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2v6M9 22l3-6 3 6M4 8h16M6 8c0 5 2.5 8 6 8s6-3 6-8" />
+                        </svg>
+                        Cerebral Palsy
+                    </h3>
+                    <p>बच्चे की ज़रूरत के अनुसार pediatric, physiotherapy, occupational व speech-language support।</p>
+                </div>
+            </div>
+            <div class="wrap" style="margin-top:32px">
+                <div class="notice reveal">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 16v-4M12 8h.01" />
+                        <circle cx="12" cy="12" r="10" />
+                    </svg>
+                    <p><b>AyurVani का role:</b> Daily wellness support — किसी professional diagnosis या treatment का
+                        replacement नहीं।</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- INGREDIENTS -->
+        <section class="pad" id="ingredients">
+            <div class="wrap">
+                <div class="ing-hero" style="padding:48px 34px">
+                    <div class="center" style="max-width:720px;margin:0 auto 38px">
+                        <div class="eyebrow reveal" style="color:var(--gold-soft);justify-content:center">Herbal
+                            Ingredients
+                        </div>
+                        <h2 class="h2 reveal" style="color:#fff">AyurVani में क्या-क्या है?</h2>
+                        <p class="lead reveal d1" style="color:#d0e0d3;margin-left:auto;margin-right:auto">पारंपरिक
+                            Ayurvedic herbs का एक balanced blend — हर एक herb के well-known traditional wellness role के
+                            साथ।</p>
+                    </div>
+                    <div class="ing-grid">
+                        <div class="ing-card reveal">
+                            <div class="circle photo">
+                                <img src="./images/12.avif" width="450" height="450" loading="lazy"
+                                    decoding="async" alt="Brahmi (Bacopa monnieri) की ताज़ी पत्तियाँ और फूल — AyurVani का Ayurvedic ingredient">
+                            </div>
+                            <h4>Brahmi / Choti Brahmi</h4>
+                            <p>Memory और mental calm को support करने के लिए पारंपरिक रूप से इस्तेमाल।</p>
+                        </div>
+                        <div class="ing-card reveal d1">
+                            <div class="circle photo">
+                                <img src="./images/14.avif" width="450" height="450" loading="lazy"
+                                    decoding="async" alt="Ashwagandha (Withania somnifera) की सूखी जड़ें — AyurVani का Ayurvedic ingredient">
+                            </div>
+                            <h4>Ashwagandha</h4>
+                            <p>Everyday stress resilience और vitality के लिए एक जानी-मानी Ayurvedic herb।</p>
+                        </div>
+                        <div class="ing-card reveal d2">
+                            <div class="circle photo">
+                                <img src="./images/13.avif" width="450" height="450" loading="lazy"
+                                    decoding="async" alt="Jatamansi (Nardostachys jatamansi) की जड़ — AyurVani का Ayurvedic ingredient">
+                            </div>
+                            <h4>Jatamansi</h4>
+                            <p>Mind को शांत रखने और restful feeling को support करने के लिए traditional use।</p>
+                        </div>
+                        <div class="ing-card reveal">
+                            <div class="circle photo">
+                                <img src="./images/15.avif" width="450" height="450" loading="lazy"
+                                    decoding="async" alt="ताज़ा Amla (Indian Gooseberry) — Vitamin C से भरपूर AyurVani ingredient">
+                            </div>
+                            <h4>Amla</h4>
+                            <p>Vitamin C और antioxidants से भरपूर — daily immunity के लिए जानी-मानी।</p>
+                        </div>
+                        <div class="ing-card reveal d1">
+                            <div class="circle photo">
+                                <img src="./images/16.avif" width="450" height="450" loading="lazy"
+                                    decoding="async" alt="Giloy (Tinospora cordifolia) की बेल और पत्तियाँ — AyurVani का Ayurvedic ingredient">
+                            </div>
+                            <h4>Giloy</h4>
+                            <p>पारंपरिक रूप से everyday immunity support के लिए इस्तेमाल की जाने वाली herb।</p>
+                        </div>
+                        <div class="ing-card reveal d3">
+                            <div class="circle photo">
+                                <img src="./images/17.avif" width="450" height="450" loading="lazy"
+                                    decoding="async" alt="Haldi / Turmeric की गाँठ और powder — curcumin से भरपूर AyurVani ingredient">
+                            </div>
+                            <h4>Haldi (Turmeric)</h4>
+                            <p>Curcumin से भरपूर — इसके antioxidant गुणों के लिए प्रसिद्ध।</p>
+                        </div>
+                    </div>
+                    <p style="text-align:center;color:#b9cebd;font-size:13px;margin-top:26px">पूरी ingredient जानकारी और
+                        quantity के लिए product label देखें। यह herbs पारंपरिक Ayurvedic उपयोग पर आधारित हैं।</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- COMPARISON -->
+        <section class="img-band" id="compare">
+            <img src="./images/compair.avif" width="1254" height="1254" loading="lazy" decoding="async"
+                alt="AyurVani Capsules बनाम other supplements — holistic Ayurvedic formula, natural ingredients, root-cause और child-friendly daily wellness support की तुलना">
+        </section>
+
+        <!-- HOW TO USE -->
+        <section class="pad soft">
+            <div class="wrap center">
+                <div class="eyebrow reveal">Usage</div>
+                <h2 class="h2 reveal">AyurVani को कैसे लें?</h2>
+                <p class="lead reveal d1">हमेशा product label पर दिए गए निर्देशों का पालन करें। नीचे दी जानकारी general
+                    guidance के लिए है।</p>
+            </div>
+            <div class="wrap grid g4" style="margin-top:44px">
+                <div class="card reveal">
+                    <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="8" width="18" height="4" rx="1" />
+                            <path d="M12 8v13M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7" />
+                        </svg></div>
+                    <h3>Recommended Dosage</h3>
+                    <p>Label पर बताई गई मात्रा के अनुसार (उम्र के हिसाब से)।</p>
+                </div>
+                <div class="card reveal d1">
+                    <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M12 6v6l4 2" />
+                        </svg></div>
+                    <h3>Timing</h3>
+                    <p>Label पर दिए recommended समय पर, नियमित रूप से।</p>
+                </div>
+                <div class="card reveal d2">
+                    <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 8h1a4 4 0 0 1 0 8h-1M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4Z" />
+                            <path d="M6 1v3M10 1v3M14 1v3" />
+                        </svg></div>
+                    <h3>With / Without Food</h3>
+                    <p>Label के निर्देश के अनुसार लें।</p>
+                </div>
+                <div class="card reveal d3">
+                    <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M8 2v4M16 2v4M3 10h18M5 4h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z" />
+                        </svg></div>
+                    <h3>Consistency</h3>
+                    <p>एक regular routine के साथ इस्तेमाल करने पर सबसे अच्छा।</p>
+                </div>
+            </div>
+            <div class="wrap" style="margin-top:32px">
+                <div class="notice reveal">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" />
+                        <path d="m9 12 2 2 4-4" />
+                    </svg>
+                    <div>
+                        <p style="margin-bottom:8px"><b>Parent Safety Notes:</b></p>
+                        <p>• Recommended dose से अधिक न दें। &nbsp;• Label की instructions ज़रूर follow करें। &nbsp;•
+                            अगर
+                            बच्चा कोई medication ले रहा है या कोई medical condition है, तो देने से पहले healthcare
+                            professional से सलाह लें। &nbsp;• किसी भी चल रहे medical treatment को AyurVani के कारण बंद न
+                            करें।</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+          <!-- TRUST / CERTIFICATIONS -->
+        <section class="img-band" id="trust">
+            <img src="./images/trust.avif" width="1254" height="1254" loading="lazy" decoding="async"
+                alt="AyurVani Certified &amp; Trusted — ISO 22000:2018 food safety, GMP certified manufacturing, FSSAI Lic. No. 12621005000332, 100% Ayurvedic transparent ingredients और customer support">
+        </section>
+
+        <!-- OFFER -->
+        <section class="pad" id="order">
+            <div class="wrap">
+                <div class="offer reveal">
+                    <div class="offer-grid">
+                        <div class="disc-visual">
+                            <img src="./images/Product.avif" alt="AyurVani Capsules — 30 capsules pack">
+                        </div>
+                        <div>
+                            <div class="eyebrow" style="color:var(--gold-soft)">AyurVani Kids</div>
+                            <h2 class="h2" style="color:#fff">अपने बच्चे की daily wellness journey को आज से support करें
+                            </h2>
+                           
+                            <ul>
+                                <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M16 16h6M19 13v6M21.29 7.29 12 12 2.71 7.29" />
+                                        <path d="M12 12v9.5M20 8.5 12 3 4 8.5v7L12 21" />
+                                    </svg>AyurVani Capsules — 30 Capsules</li>
+                                <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M20 6 9 17l-5-5" />
+                                    </svg>Cash on Delivery उपलब्ध</li>
+                                <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M20 6 9 17l-5-5" />
+                                    </svg>Parent support via call / WhatsApp</li>
+                                <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M20 6 9 17l-5-5" />
+                                    </svg>Transparent product information</li>
+                            </ul>
+                            <a href="#leadform" class="btn btn-primary" style="width:100%;max-width:340px">Get AyurVani
+                                Today</a>
+                            <p style="font-size:12.5px;color:#b7c9bb;margin-top:12px">कीमत, delivery और stock की जानकारी
+                                order के समय confirm करें।</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LEAD FORM -->
+        <section class="pad formsec" id="leadform">
+            <div class="wrap center">
+                <div class="eyebrow reveal" style="justify-content:center">Order Now</div>
+                <h2 class="h2 reveal">AyurVani order करने के लिए details भरें</h2>
+                <p class="lead reveal d1">सिर्फ नाम और mobile number — हमारी team आपको call करके order confirm करेगी।
+                </p>
+            </div>
+            <div class="wrap" style="margin-top:36px">
+                <form class="formcard reveal" id="orderForm" novalidate autocomplete="on">
+                    <div class="fgroup">
+                        <label for="fname">आपका नाम <span class="req">*</span></label>
+                        <input type="text" id="fname" name="name" placeholder="आपका पूरा नाम" autocomplete="name"
+                            maxlength="40" required aria-describedby="nameError">
+                        <div class="field-error" id="nameError" role="alert">कृपया सही नाम भरें — कम से कम 3 अक्षर, केवल
+                            letters।</div>
+                    </div>
+                    <div class="fgroup">
+                        <label for="fmobile">Mobile Number <span class="req">*</span></label>
+                        <div class="phone-wrap" id="phoneWrap">
+                            <span class="cc">+91</span>
+                            <input type="tel" id="fmobile" name="mobile" placeholder="10-digit mobile number"
+                                inputmode="numeric" pattern="[6-9][0-9]{9}" autocomplete="tel-national" maxlength="10"
+                                required aria-describedby="mobileError">
+                        </div>
+                        <div class="field-error" id="mobileError" role="alert">कृपया valid 10-digit mobile number भरें
+                            (6,
+                            7, 8 या 9 से शुरू)।</div>
+                    </div>
+
+                    <!-- attribution (filled by script, never shown to the user) -->
+                    <input type="hidden" name="utm_source">
+                    <input type="hidden" name="utm_medium">
+                    <input type="hidden" name="utm_campaign">
+                    <input type="hidden" name="utm_campaign_id">
+                    <input type="hidden" name="utm_adset">
+                    <input type="hidden" name="utm_adset_id">
+                    <input type="hidden" name="utm_ad">
+                    <input type="hidden" name="utm_ad_id">
+                    <input type="hidden" name="utm_placement">
+                    <input type="hidden" name="fbclid">
+                    <input type="hidden" name="fbc">
+                    <input type="hidden" name="fbp">
+                    <input type="hidden" name="page_url">
+                    <input type="hidden" name="user_agent">
+
+                    <button type="submit" class="btn btn-primary" id="orderSubmit" style="width:100%">ORDER करें — Cash
+                        on
+                        Delivery</button>
+                    <div class="form-trust">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="11" width="18" height="11" rx="2" />
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                        </svg>
+                        आपकी जानकारी सुरक्षित रखी जाएगी और केवल order/support communication के लिए उपयोग की जाएगी।
+                    </div>
+                </form>
+            </div>
+        </section>
+
+             <!-- TESTIMONIALS -->
+        <section class="pad">
+            <div class="wrap center">
+                <div class="eyebrow reveal">Parent Experiences</div>
+                <h2 class="h2 reveal">Parents क्या कहते हैं</h2>
+                <p class="lead reveal d1">हर बच्चे का अनुभव अलग होता है। नीचे कुछ parents के सामान्य अनुभव दिए गए हैं।
+                </p>
+            </div>
+            <div class="wrap grid g3" style="margin-top:44px">
+                <figure class="tcard reveal">
+                    <div class="tc-top">
+                        <div class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
+                        <span class="tc-mark" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M9.5 6C6.5 7.6 5 10 5 13v5h6v-6H8.6c0-2 .8-3.4 2.6-4.4L9.5 6Zm9 0C15.5 7.6 14 10 14 13v5h6v-6h-2.4c0-2 .8-3.4 2.6-4.4L18.5 6Z" />
+                            </svg>
+                        </span>
+                    </div>
+                    <blockquote>“हम अपने बच्चे के लिए ऐसा <em class="hl">herbal daily supplement</em> ढूंढ रहे थे जिसे उसकी <em class="hl">daily routine</em> में आसानी से शामिल किया जा सके। Product की information और ingredients को समझने के बाद हमने AyurVani को अपनी <em class="hl">routine</em> का हिस्सा बनाया। हमें सबसे अच्छा लगा कि product के बारे में information clearly दी गई थी और इसे use करना भी आसान लगा। Overall, हमें एक simple और transparent wellness support option मिला।”</blockquote>
+                    <figcaption class="who">
+                        <span class="av photo">
+                            <img src="./images/Client2.avif" width="315" height="450" loading="lazy"
+                            decoding="async" style="object-position:50% 8%" alt="Ritu S. — AyurVani इस्तेमाल करने वाली parent">
+                        </span>
+                        <div class="who-meta">
+                            <b>Ritu S.</b>
+                            <small>Parent</small>
+                            <span class="tc-pill">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                                    <circle cx="9" cy="7" r="4" />
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                                </svg>बच्चे की उम्र 9
+                            </span>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure class="tcard reveal d1">
+                    <div class="tc-top">
+                        <div class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
+                        <span class="tc-mark" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M9.5 6C6.5 7.6 5 10 5 13v5h6v-6H8.6c0-2 .8-3.4 2.6-4.4L9.5 6Zm9 0C15.5 7.6 14 10 14 13v5h6v-6h-2.4c0-2 .8-3.4 2.6-4.4L18.5 6Z" />
+                            </svg>
+                        </span>
+                    </div>
+                    <blockquote>“हम किसी भी product को बिना पूरी जानकारी के शुरू नहीं करना चाहते थे। AyurVani के बारे में पढ़ते समय हमें अच्छा लगा कि brand ने साफ बताया कि product क्या है और क्या नहीं। बड़े-बड़े claims के बजाय honest <em class="hl">wellness support</em> की approach ने हमें ज्यादा comfortable feel कराया। Product की जानकारी समझने के बाद इसे अपने बच्चे की <em class="hl">routine</em> में शामिल करना हमारे लिए आसान रहा।”</blockquote>
+                    <figcaption class="who">
+                        <span class="av photo">
+                            <img src="./images/Client1.avif" width="315" height="438" loading="lazy"
+                            decoding="async" style="transform:translateY(34%) scale(1.6)" alt="Amit K. — AyurVani इस्तेमाल करने वाले parent">
+                        </span>
+                        <div class="who-meta">
+                            <b>Amit K.</b>
+                            <small>Parent</small>
+                            <span class="tc-pill">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                                    <circle cx="9" cy="7" r="4" />
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                                </svg>बच्चे की उम्र 11
+                            </span>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure class="tcard reveal d2">
+                    <div class="tc-top">
+                        <div class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
+                        <span class="tc-mark" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M9.5 6C6.5 7.6 5 10 5 13v5h6v-6H8.6c0-2 .8-3.4 2.6-4.4L9.5 6Zm9 0C15.5 7.6 14 10 14 13v5h6v-6h-2.4c0-2 .8-3.4 2.6-4.4L18.5 6Z" />
+                            </svg>
+                        </span>
+                    </div>
+                    <blockquote>“हमारी सबसे बड़ी concern <em class="hl">ingredients</em> और usage को लेकर थी। AyurVani में दिए गए Ayurvedic ingredients को देखकर और support team से usage की जानकारी लेने के बाद हमें ज्यादा clarity मिली। Team ने हमारी queries को patiently समझाया और product को <em class="hl">routine</em> में शामिल करना आसान रहा। Overall हमारा experience अच्छा रहा और हमें लगा कि सही <em class="hl">information</em> और guidance parents के लिए बहुत जरूरी है।”</blockquote>
+                    <figcaption class="who">
+                        <span class="av photo">
+                            <img src="./images/Client3.avif" width="450" height="450" loading="lazy"
+                            decoding="async" style="object-position:50% 42%" alt="Sunita M. — AyurVani इस्तेमाल करने वाली parent">
+                        </span>
+                        <div class="who-meta">
+                            <b>Sunita M.</b>
+                            <small>Parent</small>
+                            <span class="tc-pill">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                                    <circle cx="9" cy="7" r="4" />
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                                </svg>बच्चे की उम्र 7
+                            </span>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+            <p style="text-align:center;color:var(--muted);font-size:13px;margin-top:24px"><em>Individual experiences
+                    may
+                    vary. ये अनुभव किसी medical result का दावा नहीं करते।</em></p>
+        </section>
+
+        <!-- FAQ -->
+        <section class="pad" id="faq">
+            <div class="wrap center">
+                <div class="eyebrow reveal" style="justify-content:center">FAQs</div>
+                <h2 class="h2 reveal">Parents के सबसे आम सवाल</h2>
+            </div>
+            <div class="wrap" style="max-width:820px;margin-top:40px">
+                <div class="faq-item reveal">
+                    <button class="faq-q">AyurVani किस age group के बच्चों के लिए है?<span class="pm"><svg width="16"
+                                height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                stroke-linecap="round">
+                                <path d="M12 5v14M5 12h14" />
+                            </svg></span></button>
+                    <div class="faq-a">
+                        <p>AyurVani एक बढ़ते बच्चों के लिए daily Ayurvedic wellness supplement है। सही उम्र और dosage के
+                            लिए
+                            हमेशा product label देखें, और किसी भी doubt में healthcare professional से सलाह लें।</p>
+                    </div>
+                </div>
+                <div class="faq-item reveal">
+                    <button class="faq-q">क्या AyurVani किसी medical condition का इलाज करता है?<span class="pm"><svg
+                                width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round">
+                                <path d="M12 5v14M5 12h14" />
+                            </svg></span></button>
+                    <div class="faq-a">
+                        <p>नहीं। AyurVani किसी भी medical condition — जैसे ADHD, Autism, Cerebral Palsy या
+                            speech-related
+                            conditions — का इलाज, cure या treatment नहीं है, और न ही इसे ऐसे प्रस्तुत किया जाता है। यह
+                            एक
+                            daily wellness supplement है। किसी भी medical concern के लिए qualified professional से
+                            assessment ज़रूरी है।</p>
+                    </div>
+                </div>
+                <div class="faq-item reveal">
+                    <button class="faq-q">क्या यह therapy या professional care की जगह ले सकता है?<span class="pm"><svg
+                                width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round">
+                                <path d="M12 5v14M5 12h14" />
+                            </svg></span></button>
+                    <div class="faq-a">
+                        <p>नहीं। AyurVani, speech therapy, physiotherapy, occupational therapy, doctor की सलाह या किसी
+                            भी
+                            prescribed treatment का replacement नहीं है। इसे एक complementary daily wellness support के
+                            रूप
+                            में देखें।</p>
+                    </div>
+                </div>
+                <div class="faq-item reveal">
+                    <button class="faq-q">क्या हर बच्चे को एक जैसा result मिलेगा?<span class="pm"><svg width="16"
+                                height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                stroke-linecap="round">
+                                <path d="M12 5v14M5 12h14" />
+                            </svg></span></button>
+                    <div class="faq-a">
+                        <p>हर बच्चे का शरीर, routine और ज़रूरतें अलग होती हैं, इसलिए individual experiences vary कर सकते
+                            हैं। AyurVani कोई guaranteed result या fixed outcome का दावा नहीं करता।</p>
+                    </div>
+                </div>
+                <div class="faq-item reveal">
+                    <button class="faq-q">क्या product देने से पहले doctor से पूछना चाहिए?<span class="pm"><svg
+                                width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round">
+                                <path d="M12 5v14M5 12h14" />
+                            </svg></span></button>
+                    <div class="faq-a">
+                        <p>अगर आपके बच्चे को कोई medical condition है, वह कोई medication ले रहा है, या आपको कोई भी doubt
+                            है,
+                            तो देने से पहले healthcare professional से सलाह लेना सबसे अच्छा है।</p>
+                    </div>
+                </div>
+                <div class="faq-item reveal">
+                    <button class="faq-q">Product के ingredients कहाँ देख सकते हैं?<span class="pm"><svg width="16"
+                                height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                stroke-linecap="round">
+                                <path d="M12 5v14M5 12h14" />
+                            </svg></span></button>
+                    <div class="faq-a">
+                        <p>पूरी ingredient list और quantity product label पर दी गई है, और इस page के "Ingredients"
+                            section
+                            में भी सूचीबद्ध है। AyurVani पारंपरिक Ayurvedic herbs जैसे Brahmi, Ashwagandha, Amla, Giloy
+                            और
+                            अन्य से बना है।</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="wrap">
+                <p class="foot-disc">© <span id="yr"></span> SS Herbal · AyurVani Capsules. यह एक Ayurvedic dietary
+                    supplement है और किसी बीमारी के इलाज, cure या treatment का दावा नहीं करता। किसी भी medical concern
+                    के
+                    लिए qualified healthcare professional से सलाह लें। Product का उपयोग label पर दिए निर्देशों के अनुसार
+                    करें। License, manufacturer और batch जानकारी product packaging पर देखें।</p>
+            </div>
+
+            <!-- POLICY LINKS -->
+            <div class="pl-wrap">
+                <div class="pl-row">
+                    <button class="pl-link" onclick="openModal('privacy')">Privacy Policy</button>
+                    <span class="pl-sep">|</span>
+                    <button class="pl-link" onclick="openModal('terms')">Terms &amp; Conditions</button>
+                    <span class="pl-sep">|</span>
+                    <button class="pl-link" onclick="openModal('shipping')">Shipping Policy</button>
+                    <span class="pl-sep">|</span>
+                    <button class="pl-link" onclick="openModal('cancel')">Cancellation Policy</button>
+                    <span class="pl-sep">|</span>
+                    <button class="pl-link" onclick="openModal('contact')">Contact Us</button>
+                    <span class="pl-sep">|</span>
+                    <button class="pl-link" onclick="openModal('disclaimer')">Legal Disclaimer</button>
+                </div>
+            </div>
+        </footer>
+
+        <!-- POLICY MODAL -->
+        <div class="pp-overlay" id="pp-overlay" onclick="closeIfOutside(event)">
+            <div class="pp-modal" id="pp-modal" role="dialog" aria-modal="true">
+                <button class="pp-close" onclick="closeModal()" aria-label="Close">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                        stroke-linecap="round">
+                        <path d="M18 6 6 18M6 6l12 12" />
+                    </svg>
+                </button>
+                <div id="pp-content"></div>
+            </div>
+        </div>
+
+        <!-- STICKY MOBILE CTA -->
+        <div class="sticky-cta show">
+            <a href="#order" class="btn btn-primary">BUY AYURVANI</a>
+        </div>
+    </div><!-- /#app-root -->
+
+    <!-- SUBMITTING OVERLAY -->
+    <div id="loadingOverlay">
+        <div class="ld-card">
+            <div class="ld-spin"></div>
+            <div class="ld-title">Order submit हो रहा है…</div>
+            <div class="ld-sub">कृपया इंतज़ार करें, page अपने आप आगे बढ़ जाएगा।</div>
+        </div>
+    </div>
+
+    <script>
+        // scroll progress
+        window.addEventListener('scroll', () => {
+            const h = document.documentElement;
+            const scrolled = (h.scrollTop) / (h.scrollHeight - h.clientHeight) * 100;
+            document.getElementById('progress').style.width = scrolled + '%';
+        });
+
+        // reveal on scroll
+        const io = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+        }, { threshold: .12 });
+        document.querySelectorAll('.reveal:not(.in)').forEach(el => io.observe(el));
+
+        // faq accordion
+        document.querySelectorAll('.faq-q').forEach(q => {
+            q.addEventListener('click', () => {
+                const item = q.parentElement;
+                const ans = item.querySelector('.faq-a');
+                const open = item.classList.contains('open');
+                document.querySelectorAll('.faq-item').forEach(i => { i.classList.remove('open'); i.querySelector('.faq-a').style.maxHeight = null; });
+                if (!open) { item.classList.add('open'); ans.style.maxHeight = ans.scrollHeight + 'px'; }
+            });
+        });
+
+        document.getElementById('yr').textContent = new Date().getFullYear();
+
+        // ===== policy modals =====
+        var SV = 'viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"';
+        function ico(path, size) {
+            return '<svg width="' + (size || 20) + '" height="' + (size || 20) + '" ' + SV + ' aria-hidden="true">' + path + '</svg>';
+        }
+        var ICO = {
+            shield: ico('<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="M12 11v3"/><circle cx="12" cy="9" r="1"/>'),
+            doc: ico('<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6M8 13h8M8 17h5"/>'),
+            truck: ico('<path d="M1 3h13v13H1zM14 8h4l3 3v5h-7z"/><circle cx="5.5" cy="18.5" r="2"/><circle cx="17.5" cy="18.5" r="2"/>'),
+            refresh: ico('<path d="M21 12a9 9 0 1 1-3-6.7"/><path d="M21 3v6h-6"/>'),
+            headset: ico('<path d="M4 14v-2a8 8 0 0 1 16 0v2"/><path d="M4 14h3v6H5a1 1 0 0 1-1-1zM20 14h-3v6h2a1 1 0 0 0 1-1z"/>'),
+            alert: ico('<circle cx="12" cy="12" r="10"/><path d="M12 7v6M12 16.5v.5"/>'),
+            phone: ico('<path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/>'),
+            mail: ico('<rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/>'),
+            clock: ico('<circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>'),
+            chat: ico('<path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.9 8.9 0 0 1-4-.9L3 21l1.9-4.9A8.4 8.4 0 0 1 4 11.5a8.4 8.4 0 0 1 8.5-8.4h.5A8.4 8.4 0 0 1 21 11z"/>')
+        };
+
+        var contents = {
+            privacy: '<div class="pp-mtitle">' + ICO.shield + 'Privacy Policy</div><div class="pp-mbadge">Last updated: June 2025</div><p class="pp-mpara">AyurVani (SS Herbal) आपकी personal information की सुरक्षा को सर्वोच्च प्राथमिकता देता है। जब आप order करते हैं तो हम निम्नलिखित जानकारी एकत्र करते हैं:</p><ul class="pp-mlist"><li>नाम, मोबाइल नंबर और delivery address</li><li>Payment details (encrypted और secure)</li><li>Order history और purchase records</li></ul><div class="pp-mhl">आपकी जानकारी किसी third-party को नहीं बेची जाती। इसका उपयोग केवल order processing और delivery के लिए किया जाता है।</div><p class="pp-mpara">हम industry-standard SSL encryption का उपयोग करते हैं। किसी भी privacy concern के लिए हमसे contact करें।</p>',
+
+            terms: '<div class="pp-mtitle">' + ICO.doc + 'Terms &amp; Conditions</div><div class="pp-mbadge">Please read carefully</div><p class="pp-mpara">AyurVani का उपयोग करके आप इन terms से सहमत होते हैं:</p><ul class="pp-mlist"><li>Product results व्यक्ति-दर-व्यक्ति अलग हो सकते हैं</li><li>यह product किसी बीमारी का इलाज नहीं है — एक Ayurvedic wellness supplement है</li><li>18 वर्ष से कम आयु के व्यक्ति बिना guardian consent के order न करें</li><li>Fake/fraudulent orders के लिए legal action लिया जा सकता है</li><li>Product images केवल representation के लिए हैं</li></ul><div class="pp-mhl">AyurVani किसी भी समय बिना prior notice के prices, offers या terms बदलने का अधिकार रखता है।</div>',
+
+            shipping: '<div class="pp-mtitle">' + ICO.truck + 'Shipping Policy</div><div class="pp-mbadge">Free Delivery All India</div><p class="pp-mpara">हम पूरे India में FREE shipping प्रदान करते हैं। Delivery timeline:</p><ul class="pp-mlist"><li>Metro cities (Delhi, Mumbai, Bengaluru): 3–5 business days</li><li>Tier-2 / Tier-3 cities: 5–7 business days</li><li>Remote / rural areas: 7–10 business days</li></ul><div class="pp-mhl">Order confirm होने के 24–48 घंटे के अंदर tracking number SMS/WhatsApp पर भेजा जाएगा।</div><ul class="pp-mlist"><li>Delivery attempt 3 बार की जाएगी — उसके बाद order वापस आ जाएगा</li><li>Incorrect address की जिम्मेदारी customer की होगी</li></ul>',
+
+            cancel: '<div class="pp-mtitle">' + ICO.refresh + 'Cancellation Policy</div><div class="pp-mbadge">7-Day Easy Return</div><p class="pp-mpara">आप order confirm होने के <strong>24 घंटे के अंदर</strong> cancellation request कर सकते हैं।</p><ul class="pp-mlist"><li>Order dispatch होने के बाद cancellation संभव नहीं</li><li>Damaged या wrong product मिलने पर 7 दिन के अंदर complaint करें</li><li>Opened/used products return नहीं किए जाएंगे</li><li>Refund 5–7 business days में original payment method पर</li></ul><div class="pp-mhl">Return के लिए product original packaging में होना ज़रूरी है। Unboxing video होने पर claim जल्दी process होता है।</div>',
+
+            contact: '<div class="pp-mtitle">' + ICO.headset + 'Contact Us</div><p class="pp-mpara">AyurVani (SS Herbal) की team आपकी मदद के लिए available है — सोमवार से शनिवार, सुबह 9 बजे से शाम 6 बजे तक।</p><div class="pp-cgrid"><div class="pp-citem">' + ICO.phone + '<div class="pp-clbl">Call / WhatsApp</div><div class="pp-cval"><a href="tel:+918860606078" style="color:inherit;text-decoration:none">+91 88606 06078</a></div></div><div class="pp-citem">' + ICO.mail + '<div class="pp-clbl">Email</div><div class="pp-cval">support@ssherbalindia.com</div></div><div class="pp-citem">' + ICO.clock + '<div class="pp-clbl">Support Hours</div><div class="pp-cval">Mon–Sat 9am–6pm</div></div><div class="pp-citem">' + ICO.chat + '<div class="pp-clbl">Response Time</div><div class="pp-cval">Within 24 hours</div></div></div>',
+
+            disclaimer: '<div class="pp-mtitle">' + ICO.alert + 'Legal Disclaimer</div><div class="pp-mbadge">Important Notice</div><p class="pp-mpara">AyurVani Capsules एक Ayurvedic dietary wellness supplement है। इस product के बारे में निम्नलिखित बातें ध्यान में रखें:</p><ul class="pp-mlist"><li>यह product किसी भी बीमारी का diagnosis, treatment, cure या prevention नहीं करता</li><li>Results individual to individual अलग हो सकते हैं</li><li>यह product FSSAI guidelines के अनुसार एक food supplement है, drug नहीं</li><li>किसी भी medical condition में उपयोग से पहले doctor से परामर्श करें</li><li>Pregnant, nursing women या किसी chronic illness वाले व्यक्ति पहले physician से consult करें</li></ul><div class="pp-mhl">Website पर दिए गए statements को किसी regulatory authority द्वारा evaluate नहीं किया गया है। यह product किसी disease को diagnose, treat, cure या prevent करने के लिए नहीं है।</div><p class="pp-mpara">Product की images, descriptions और testimonials केवल illustrative purpose के लिए हैं। AyurVani किसी भी indirect या consequential loss के लिए उत्तरदायी नहीं है।</p>'
+        };
+
+        function openModal(key) {
+            document.getElementById('pp-content').innerHTML = contents[key];
+            document.getElementById('pp-modal').scrollTop = 0;
+            document.getElementById('pp-overlay').classList.add('show');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeModal() {
+            document.getElementById('pp-overlay').classList.remove('show');
+            document.body.style.overflow = '';
+        }
+        function closeIfOutside(e) {
+            if (e.target === document.getElementById('pp-overlay')) closeModal();
+        }
+        document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeModal(); });
+
+        /* ================= ATTRIBUTION (UTM / Meta) ================= */
+        var UTM_KEYS = [
+            'utm_source', 'utm_medium',
+            'utm_campaign', 'utm_campaign_id',
+            'utm_adset', 'utm_adset_id',
+            'utm_ad', 'utm_ad_id',
+            'utm_placement'
+        ];
+
+        function setHiddenField(name, value) {
+            var input = document.querySelector('#orderForm input[name="' + name + '"]');
+            if (input) input.value = value || '';
+        }
+
+        function readCookieValue(name) {
+            var match = document.cookie.match(new RegExp('(^|;\\s*)' + name + '=([^;]*)'));
+            return match ? decodeURIComponent(match[2]) : '';
+        }
+
+        function stickyAttrValue(key, fromUrl) {
+            if (fromUrl) {
+                try { sessionStorage.setItem(key, fromUrl); } catch (e) { /* private mode */ }
+                return fromUrl;
+            }
+            try { return sessionStorage.getItem(key) || ''; } catch (e) { return ''; }
+        }
+
+        function captureUtmParams() {
+            var urlParams = new URLSearchParams(window.location.search);
+
+            UTM_KEYS.forEach(function (key) {
+                setHiddenField(key, stickyAttrValue(key, urlParams.get(key)));
+            });
+
+            // Meta click ID — present only on the first landing URL, so persist it.
+            var fbclid = stickyAttrValue('fbclid', urlParams.get('fbclid'));
+            setHiddenField('fbclid', fbclid);
+
+            // _fbc cookie is set by the Meta pixel itself; build it from fbclid as a
+            // fallback in case the pixel script was blocked or hasn't run yet.
+            var fbc = readCookieValue('_fbc');
+            if (!fbc && fbclid) { fbc = stickyAttrValue('fbc', 'fb.1.' + Date.now() + '.' + fbclid); }
+            setHiddenField('fbc', fbc);
+            setHiddenField('fbp', readCookieValue('_fbp'));
+            setHiddenField('page_url', window.location.href);
+            setHiddenField('user_agent', navigator.userAgent);
+        }
+
+        captureUtmParams();
+
+        /* ================= ORDER FORM LOGIC ================= */
+        // Google Apps Script Web App endpoint (order form -> Google Sheet)
+        const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxXqsKeb1MJE9RMe4dxyTAmCnn_fwykdLme91ni-jigD1AAm27m_h_XF6-aSeD_4xs/exec";
+
+        const orderForm = document.getElementById('orderForm');
+        const nameInput = document.getElementById('fname');
+        const mobileInput = document.getElementById('fmobile');
+        const nameError = document.getElementById('nameError');
+        const mobileError = document.getElementById('mobileError');
+        const phoneWrap = document.getElementById('phoneWrap');
+        const submitBtn = document.getElementById('orderSubmit');
+        const stickyBtn = document.querySelector('.sticky-cta');
+        let isSubmitting = false;
+
+        /* ---------- validation rules ---------- */
+        const LETTERS = 'a-zA-Zऀ-ॿ';
+
+        function cleanName(v) {
+            // letters (Latin + Devanagari) and single spaces only
+            return v.replace(new RegExp('[^' + LETTERS + '\\s]', 'g'), '')
+                .replace(/\s{2,}/g, ' ')
+                .replace(/^\s+/, '');
+        }
+
+        function nameProblem(v) {
+            const n = v.trim();
+            if (!n) return 'कृपया अपना नाम भरें।';
+            if (n.replace(/\s/g, '').length < 3) return 'नाम कम से कम 3 अक्षर का होना चाहिए।';
+            if (n.length > 40) return 'नाम बहुत लंबा है (अधिकतम 40 अक्षर)।';
+            if (!new RegExp('^[' + LETTERS + ']+( [' + LETTERS + ']+)*$').test(n)) return 'नाम में केवल letters का उपयोग करें।';
+            return '';
+        }
+
+        function mobileProblem(v) {
+            const m = v.trim();
+            if (!m) return 'कृपया अपना mobile number भरें।';
+            if (m.length !== 10) return 'Mobile number पूरे 10 digits का होना चाहिए।';
+            if (!/^[6-9]/.test(m)) return 'Valid Indian number 6, 7, 8 या 9 से शुरू होता है।';
+            if (/^(\d)\1{9}$/.test(m)) return 'यह number valid नहीं लगता, कृपया दोबारा जाँचें।';
+            if (m === '9876543210' || m === '1234567890') return 'यह number valid नहीं लगता, कृपया दोबारा जाँचें।';
+            return '';
+        }
+
+        function showError(el, box, msg) {
+            box.textContent = msg;
+            box.style.display = 'block';
+            el.classList.add('invalid');
+            el.setAttribute('aria-invalid', 'true');
+        }
+
+        function clearError(el, box) {
+            box.style.display = 'none';
+            el.classList.remove('invalid');
+            el.removeAttribute('aria-invalid');
+        }
+
+        function validateName(show) {
+            const msg = nameProblem(nameInput.value);
+            if (msg && show) { showError(nameInput, nameError, msg); } else { clearError(nameInput, nameError); }
+            return !msg;
+        }
+
+        function validateMobile(show) {
+            const msg = mobileProblem(mobileInput.value);
+            if (msg && show) { showError(phoneWrap, mobileError, msg); } else { clearError(phoneWrap, mobileError); }
+            return !msg;
+        }
+
+        /* ---------- live input hygiene ---------- */
+        nameInput.addEventListener('input', function () {
+            this.value = cleanName(this.value);
+            clearError(nameInput, nameError);
+        });
+        nameInput.addEventListener('blur', function () { if (this.value) validateName(true); });
+
+        mobileInput.addEventListener('input', function () {
+            this.value = this.value.replace(/[^0-9]/g, '').slice(0, 10);
+            clearError(phoneWrap, mobileError);
+        });
+        mobileInput.addEventListener('blur', function () { if (this.value) validateMobile(true); });
+
+        // a pasted "+91 98765 43210" or "098765..." still lands as 10 clean digits
+        mobileInput.addEventListener('paste', function (e) {
+            e.preventDefault();
+            const raw = (e.clipboardData || window.clipboardData).getData('text');
+            let digits = raw.replace(/[^0-9]/g, '');
+            if (digits.length > 10) digits = digits.replace(/^(91|0)/, '');
+            this.value = digits.slice(0, 10);
+            clearError(phoneWrap, mobileError);
+        });
+
+        /* ---------- submit ---------- */
+        orderForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+            if (isSubmitting) return;
+
+            const okName = validateName(true);
+            const okMobile = validateMobile(true);
+            if (!okName || !okMobile) {
+                (okName ? mobileInput : nameInput).focus();
+                return;
+            }
+
+            const name = nameInput.value.trim().replace(/\s{2,}/g, ' ');
+            const mobile = mobileInput.value.trim();
+
+            isSubmitting = true;
+            submitBtn.disabled = true;
+            document.getElementById('app-root').classList.add('blurred');
+            document.getElementById('loadingOverlay').classList.add('show');
+            if (stickyBtn) stickyBtn.classList.remove('show');
+
+            // Re-capture attribution in case this page was open before storage was set
+            captureUtmParams();
+
+            const formData = new FormData(orderForm);
+            formData.set('name', name);
+            formData.set('mobile', mobile);
+            formData.append('product', 'AyurVani Capsules');
+            formData.append('timestamp', new Date().toLocaleString('en-IN'));
+
+            fetch(GOOGLE_SCRIPT_URL, { method: 'POST', mode: 'no-cors', body: formData })
+                .catch(function (err) { console.log('Submission note:', err); })
+                .finally(function () {
+                    setTimeout(function () {
+                        orderForm.reset();
+                        window.location.href = "Thankyou.html";
+                    }, 1800);
+                });
+        });
+    </script>
+</body>
+
+</html>
