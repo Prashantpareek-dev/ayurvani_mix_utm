@@ -759,6 +759,106 @@
             }
         }
 
+        /* ===== Speech checklist tiles ===== */
+        .symp-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 14px
+        }
+
+        .symp {
+            background: #fff;
+            border: 1px solid var(--line);
+            border-radius: 18px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            box-shadow: var(--shadow-sm);
+            transition: transform .3s ease, box-shadow .3s ease
+        }
+
+        .symp:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 18px 36px -22px rgba(19, 42, 23, .55)
+        }
+
+        .symp .ph {
+            position: relative;
+            aspect-ratio: 1 / 1;
+            background: var(--mint);
+            overflow: hidden
+        }
+
+        .symp .ph img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform .6s cubic-bezier(.2, .8, .2, 1)
+        }
+
+        .symp:hover .ph img {
+            transform: scale(1.06)
+        }
+
+        .symp .n {
+            position: absolute;
+            top: 9px;
+            left: 9px;
+            z-index: 2;
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            background: rgba(19, 42, 23, .74);
+            color: #fff;
+            font-size: 12px;
+            font-weight: 800;
+            font-family: 'Sora', sans-serif;
+            display: grid;
+            place-items: center
+        }
+
+        .symp p {
+            margin: 0;
+            padding: 12px 13px 15px;
+            font-size: 13.5px;
+            line-height: 1.55;
+            font-weight: 600;
+            color: var(--text)
+        }
+
+        .symp.accent {
+            background: linear-gradient(160deg, var(--green-700), var(--green-900));
+            border-color: transparent
+        }
+
+        .symp.accent .ph {
+            background: transparent;
+            display: grid;
+            place-items: center;
+            color: #9ecb92
+        }
+
+        .symp.accent .ph svg {
+            width: 52px;
+            height: 52px
+        }
+
+        .symp.accent .n {
+            background: rgba(255, 255, 255, .18)
+        }
+
+        .symp.accent p {
+            color: #e9f3e5
+        }
+
+        @media(max-width:360px) {
+            .symp p {
+                font-size: 12.5px;
+                padding: 10px 11px 13px
+            }
+        }
+
         /* problems bg */
         .soft {
             background: linear-gradient(180deg, var(--cream), var(--ivory))
@@ -864,9 +964,25 @@
             line-height: 1.4
         }
 
+        .emotion .say {
+            margin-top: 18px;
+            font-size: 15.5px;
+            line-height: 1.8;
+            color: #d5e4d9;
+            max-width: 560px
+        }
+
+        .emotion .say.strong {
+            color: #fff;
+            font-weight: 700
+        }
+
         .emotion .after {
-            margin-top: 16px;
-            font-size: 15px;
+            margin-top: 18px;
+            padding-top: 18px;
+            border-top: 1px solid rgba(255, 255, 255, .14);
+            font-size: 15.5px;
+            line-height: 1.75;
             color: #c4d6c8;
             max-width: 560px
         }
@@ -2566,219 +2682,106 @@
         <!-- HERO -->
         <section class="hero" id="top">
             <img src="./images/hook.avif" alt="">
-            <img src="./images/hook2.avif" alt="">
         </section>
 
         <!-- EVERYDAY WELLNESS AREAS (reframed problems) -->
         <section class="pad soft" id="why">
             <div class="wrap center">
-                <div class="eyebrow reveal">Daily Wellness</div>
-                <h2 class="h2 reveal">बढ़ते बच्चों की रोज़मर्रा wellness के कई पहलू होते हैं</h2>
-                <p class="lead reveal d1">पढ़ाई, नींद, energy, mood और immunity — हर हिस्सा बच्चे के दिन को प्रभावित
-                    करता
-                    है। AyurVani इन everyday wellness areas को एक herbal तरीके से support करने के लिए बनाया गया है।</p>
+                <div class="eyebrow reveal">Parent Checklist</div>
+                <h2 class="h2 reveal">क्या आपके बच्चे के साथ भी ऐसा होता है?</h2>
             </div>
-            <div class="wrap grid g3 cards-media" style="margin-top:44px">
-                <article class="card has-media reveal">
-                    <div class="card-media">
-                        <img src="./images/1.avif" width="450" height="450" loading="eager" decoding="async" alt="Focus & Concentration — AyurVani Ayurvedic daily wellness support for growing kids">
-                        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <path
-                                d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 1.98-3A2.5 2.5 0 0 1 9.5 2Z" />
-                            <path
-                                d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-1.98-3A2.5 2.5 0 0 0 14.5 2Z" />
-                        </svg></div>
+            <div class="wrap symp-grid" style="margin-top:38px">
+                <div class="symp reveal">
+                    <div class="ph">
+                        <span class="n">1</span>
+                        <img src="./images/18.avif" width="450" height="450" loading="eager" decoding="async"
+                            alt="बोलते समय बार-बार अटक जाता है — बच्चों में speech difficulty का एक सामान्य संकेत">
                     </div>
-                    <div class="card-body">
-                        <h3><span class="card-num">1.</span> Focus &amp; Concentration</h3>
-                        <p>Study time, homework और daily activities के दौरान बच्चे की everyday mental calm और focus को
-                        support
-                        करने के लिए।</p>
-                        <div class="card-foot">
-                            <span class="card-dots" aria-hidden="true">
-                                <i class="on"></i>
-                                <i></i>
-                                <i></i>
-                                <i></i>
-                                <i></i>
-                                <i></i>
-                            </span>
-                            <a class="card-go" href="#intro" aria-label="Focus and Concentration — और जानें">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M5 12h14" />
-                                    <path d="m12 5 7 7-7 7" />
-                                </svg>
-                            </a>
-                        </div>
+                    <p>बोलते समय बार-बार अटक जाता है</p>
+                </div>
+                <div class="symp reveal d1">
+                    <div class="ph">
+                        <span class="n">2</span>
+                        <img src="./images/19.avif" width="450" height="450" loading="eager" decoding="async"
+                            alt="तुतलाकर बोलता है — बच्चों में speech difficulty का एक सामान्य संकेत">
                     </div>
-                </article>
-                <article class="card has-media reveal d1">
-                    <div class="card-media">
-                        <img src="./images/2.avif" width="450" height="450" loading="eager" decoding="async" alt="Calm & Balanced Mood — AyurVani Ayurvedic daily wellness support for growing kids">
-                        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-                        </svg></div>
+                    <p>तुतलाकर बोलता है</p>
+                </div>
+                <div class="symp reveal d2">
+                    <div class="ph">
+                        <span class="n">3</span>
+                        <img src="./images/22.avif" width="450" height="450" loading="lazy" decoding="async"
+                            alt="हकलाता है — बच्चों में speech difficulty का एक सामान्य संकेत">
                     </div>
-                    <div class="card-body">
-                        <h3><span class="card-num">2.</span> Calm &amp; Balanced Mood</h3>
-                        <p>Jatamansi और Brahmi जैसी herbs पारंपरिक रूप से mind को शांत रखने में इस्तेमाल होती आई हैं।</p>
-                        <div class="card-foot">
-                            <span class="card-dots" aria-hidden="true">
-                                <i></i>
-                                <i class="on"></i>
-                                <i></i>
-                                <i></i>
-                                <i></i>
-                                <i></i>
-                            </span>
-                            <a class="card-go" href="#intro" aria-label="Calm and Balanced Mood — और जानें">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M5 12h14" />
-                                    <path d="m12 5 7 7-7 7" />
-                                </svg>
-                            </a>
-                        </div>
+                    <p>हकलाता है</p>
+                </div>
+                <div class="symp reveal">
+                    <div class="ph">
+                        <span class="n">4</span>
+                        <img src="./images/20.avif" width="450" height="450" loading="lazy" decoding="async"
+                            alt="शब्द साफ-साफ नहीं निकलते — बच्चों में speech difficulty का एक सामान्य संकेत">
                     </div>
-                </article>
-                <article class="card has-media reveal d2">
-                    <div class="card-media">
-                        <img src="./images/3.avif" width="450" height="450" loading="lazy" decoding="async" alt="Daily Immunity — AyurVani Ayurvedic daily wellness support for growing kids">
-                        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <path
-                                d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1Z" />
-                        </svg></div>
+                    <p>शब्द साफ-साफ नहीं निकलते</p>
+                </div>
+                <div class="symp reveal d1">
+                    <div class="ph">
+                        <span class="n">5</span>
+                        <img src="./images/21.avif" width="450" height="450" loading="lazy" decoding="async"
+                            alt="एक ही शब्द कई बार दोहराता है — बच्चों में speech difficulty का एक सामान्य संकेत">
                     </div>
-                    <div class="card-body">
-                        <h3><span class="card-num">3.</span> Daily Immunity</h3>
-                        <p>Amla, Giloy और Haldi antioxidants से भरपूर herbs हैं, जो everyday immunity support के लिए जानी
-                        जाती
-                        हैं।</p>
-                        <div class="card-foot">
-                            <span class="card-dots" aria-hidden="true">
-                                <i></i>
-                                <i></i>
-                                <i class="on"></i>
-                                <i></i>
-                                <i></i>
-                                <i></i>
-                            </span>
-                            <a class="card-go" href="#intro" aria-label="Daily Immunity — और जानें">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M5 12h14" />
-                                    <path d="m12 5 7 7-7 7" />
-                                </svg>
-                            </a>
-                        </div>
+                    <p>एक ही शब्द कई बार दोहराता है</p>
+                </div>
+                <div class="symp reveal d2">
+                    <div class="ph">
+                        <span class="n">6</span>
+                        <img src="./images/23.avif" width="450" height="450" loading="lazy" decoding="async"
+                            alt="अपनी बात पूरी करने में बहुत समय लगाता है — बच्चों में speech difficulty का एक सामान्य संकेत">
                     </div>
-                </article>
-                <article class="card has-media reveal">
-                    <div class="card-media">
-                        <img src="./images/4.avif" width="450" height="450" loading="lazy" decoding="async" alt="Healthy Growth Years — AyurVani Ayurvedic daily wellness support for growing kids">
-                        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M12 2v20" />
-                            <path d="M2 5h20" />
-                            <path d="M3 3v2c0 8.5 4 12 9 12s9-3.5 9-12V3" />
-                        </svg></div>
+                    <p>अपनी बात पूरी करने में बहुत समय लगाता है</p>
+                </div>
+                <div class="symp reveal">
+                    <div class="ph">
+                        <span class="n">7</span>
+                        <img src="./images/24.avif" width="450" height="450" loading="lazy" decoding="async"
+                            alt="नए लोगों के सामने बोलने से बचता है — बच्चों में speech difficulty का एक सामान्य संकेत">
                     </div>
-                    <div class="card-body">
-                        <h3><span class="card-num">4.</span> Healthy Growth Years</h3>
-                        <p>Growing years में एक herbal/nutritional wellness support के रूप में, balanced diet के साथ।</p>
-                        <div class="card-foot">
-                            <span class="card-dots" aria-hidden="true">
-                                <i></i>
-                                <i></i>
-                                <i></i>
-                                <i class="on"></i>
-                                <i></i>
-                                <i></i>
-                            </span>
-                            <a class="card-go" href="#intro" aria-label="Healthy Growth Years — और जानें">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M5 12h14" />
-                                    <path d="m12 5 7 7-7 7" />
-                                </svg>
-                            </a>
-                        </div>
+                    <p>नए लोगों के सामने बोलने से बचता है</p>
+                </div>
+                <div class="symp reveal d1">
+                    <div class="ph">
+                        <span class="n">8</span>
+                        <img src="./images/25.avif" width="450" height="450" loading="lazy" decoding="async"
+                            alt="स्कूल में answer पता होने के बाद भी बोलने से डरता है — बच्चों में speech difficulty का एक सामान्य संकेत">
                     </div>
-                </article>
-                <article class="card has-media reveal d1">
-                    <div class="card-media">
-                        <img src="./images/5.avif" width="450" height="450" loading="lazy" decoding="async" alt="Digestion Support — AyurVani Ayurvedic daily wellness support for growing kids">
-                        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <path
-                                d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" />
-                            <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" />
-                        </svg></div>
+                    <p>स्कूल में answer पता होने के बाद भी बोलने से डरता है</p>
+                </div>
+                <div class="symp reveal d2">
+                    <div class="ph">
+                        <span class="n">9</span>
+                        <img src="./images/26.avif" width="450" height="450" loading="lazy" decoding="async"
+                            alt="दूसरे बच्चों के सामने जल्दी nervous हो जाता है — बच्चों में speech difficulty का एक सामान्य संकेत">
                     </div>
-                    <div class="card-body">
-                        <h3><span class="card-num">5.</span> Digestion Support</h3>
-                        <p>Saunth, Pipal और Kali Mirch पारंपरिक रूप से healthy digestion को support करने के लिए इस्तेमाल
-                        होती
-                        हैं।</p>
-                        <div class="card-foot">
-                            <span class="card-dots" aria-hidden="true">
-                                <i></i>
-                                <i></i>
-                                <i></i>
-                                <i></i>
-                                <i class="on"></i>
-                                <i></i>
-                            </span>
-                            <a class="card-go" href="#intro" aria-label="Digestion Support — और जानें">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M5 12h14" />
-                                    <path d="m12 5 7 7-7 7" />
-                                </svg>
-                            </a>
-                        </div>
+                    <p>दूसरे बच्चों के सामने जल्दी nervous हो जाता है</p>
+                </div>
+                <div class="symp  reveal d2">
+                    <div class="ph">
+                        <span class="n">9</span>
+                        <img src="./images/27.avif" width="450" height="450" loading="lazy" decoding="async"
+                            alt="दूसरे बच्चों के सामने जल्दी nervous हो जाता है — बच्चों में speech difficulty का एक सामान्य संकेत">
                     </div>
-                </article>
-                <article class="card has-media reveal d2">
-                    <div class="card-media">
-                        <img src="./images/6.avif" width="450" height="450" loading="lazy" decoding="async" alt="Parent-Guided Routine — AyurVani Ayurvedic daily wellness support for growing kids">
-                        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M12 22c5.5 0 10-4.5 10-10S17.5 2 12 2 2 6.5 2 12s4.5 10 10 10Z" />
-                            <path d="M8 14s1.5 2 4 2 4-2 4-2" />
-                            <path d="M9 9h.01M15 9h.01" />
-                        </svg></div>
-                    </div>
-                    <div class="card-body">
-                        <h3><span class="card-num">6.</span> Parent-Guided Routine</h3>
-                        <p>एक simple daily routine के हिस्से के रूप में, ताकि wellness को manage करना parents के लिए आसान
-                        हो।
-                    </p>
-                        <div class="card-foot">
-                            <span class="card-dots" aria-hidden="true">
-                                <i></i>
-                                <i></i>
-                                <i></i>
-                                <i></i>
-                                <i></i>
-                                <i class="on"></i>
-                            </span>
-                            <a class="card-go" href="#intro" aria-label="Parent-Guided Routine — और जानें">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M5 12h14" />
-                                    <path d="m12 5 7 7-7 7" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </article>
+                    <p>बोलते समय confidence कम दिखाई देता है</p>
+                </div>
             </div>
-          
+            <div class="wrap" style="margin-top:26px">
+                <div class="notice reveal">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0Z" />
+                        <path d="M12 9v4M12 17h.01" />
+                    </svg>
+                    <p>अगर इनमें से कई बातें आपके बच्चे में दिखती हैं, तो उसकी बोलने की दिक्कत पर ध्यान देना जरूरी है।</p>
+                </div>
+            </div>
         </section>
 
         <!-- EMOTION BAND -->
@@ -2786,7 +2789,7 @@
             <div class="wrap">
                 <div class="visual reveal">
                     <img src="./images/7.avif" width="450" height="450" loading="lazy" decoding="async"
-                        alt="माता-पिता और बच्चा साथ में — AyurVani के साथ बच्चों की daily herbal wellness routine"
+                        alt="बोलने में झिझकता बच्चा — माता-पिता, teacher और दोस्तों के बीच रोज़ के पल"
                         onload="this.closest('.visual').classList.add('has-img')">
                     <div class="ph">
                         <svg width="90" height="90" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -2799,29 +2802,32 @@
                     </div>
                 </div>
                 <div>
-                    <h2 class="reveal">हर माता-पिता चाहते हैं कि उनका बच्चा calm रहे, अच्छे से सीखे और स्वस्थ रहकर आगे
-                        बढ़े।
-                    </h2>
+                    <h2 class="reveal">हर मां-बाप चाहते हैं कि उनका बच्चा खुलकर बोले</h2>
+                    <p class="say reveal d1">जब बच्चा छोटा होता है तो कई बार मां-बाप सोचते हैं:</p>
+                    <p class="quote reveal d1">“थोड़ा बड़ा होगा तो अपने आप ठीक हो जाएगा।”</p>
+                    <p class="say reveal d2">लेकिन जब वही बच्चा स्कूल जाना शुरू करता है और बोलते समय बार-बार अटकता है,
+                        तो परेशानी ज्यादा दिखाई देने लगती है।</p>
                     <div class="steps">
                         <div class="reveal d1"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
-                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M20 6 9 17l-5-5" />
-                            </svg>एक balanced daily routine बच्चों के लिए बहुत मायने रखती है।</div>
+                                stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m9 6 6 6-6 6" />
+                            </svg>Teacher सवाल पूछे और answer पता होने के बाद भी बच्चा चुप रहे…</div>
                         <div class="reveal d2"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
-                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M20 6 9 17l-5-5" />
-                            </svg>अच्छी नींद, सही खान-पान और थोड़ी herbal support मिलकर wellness बनाती है।</div>
+                                stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m9 6 6 6-6 6" />
+                            </svg>दोस्तों के सामने बोलने से बचे…</div>
                         <div class="reveal d3"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
-                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M20 6 9 17l-5-5" />
-                            </svg>बच्चे को डांटने या compare करने के बजाय, उसे समझना और support देना ज़्यादा ज़रूरी है।
-                        </div>
+                                stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m9 6 6 6-6 6" />
+                            </svg>कोई उसके बोलने की नकल करे…</div>
+                        <div class="reveal d3"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m9 6 6 6-6 6" />
+                            </svg>या बच्चा खुद ही लोगों से कम बात करने लगे…</div>
                     </div>
-                    <p class="quote reveal d2">“मैं अपने बच्चे की daily wellness के लिए एक अच्छा, natural तरीका ढूँढ रहा
-                        हूँ।”</p>
-                    <p class="after reveal d3">AyurVani को उसी सोच के साथ बनाया गया है — एक honest, herbal daily
-                        wellness
-                        supplement, जो एक अच्छी routine का हिस्सा बन सके।</p>
+                    <p class="say strong reveal d3">तो मां-बाप की चिंता बढ़ना आम बात है।</p>
+                    <p class="after reveal d3">ऐसे समय में बच्चे को डांटने की नहीं, प्यार से समझने और सही support देने
+                        की जरूरत होती है।</p>
                 </div>
             </div>
         </section>
