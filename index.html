@@ -1509,280 +1509,277 @@
             line-height: 1.55
         }
 
-        /* ===== How to use ===== */
+        /* ===== How to use — fits in one screen ===== */
+        #howto {
+       
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-block: clamp(28px, 5vh, 64px)
+        }
+
+        #howto .lead {
+            font-size: clamp(13px, 1.6vh, 15px);
+            margin-top: 6px
+        }
+
+        #howto .h2 {
+            font-size: clamp(24px, 4.2vh, 40px)
+        }
+
+        /* same 2×2 layout on every screen size */
+        #howto .grid,
+        #howto .g4 {
+            grid-template-columns: repeat(2, 1fr);
+            gap: clamp(10px, 1.8vh, 20px);
+            margin-top: clamp(18px, 3.5vh, 40px) !important;
+            max-width: 760px
+        }
+
+        #howto .card {
+            padding: clamp(12px, 2.2vh, 22px) 16px;
+            border-radius: 16px
+        }
+
+        #howto .ico {
+            width: clamp(34px, 5vh, 46px);
+            height: clamp(34px, 5vh, 46px);
+            border-radius: 11px;
+            margin-bottom: clamp(6px, 1.4vh, 14px)
+        }
+
+        #howto .ico svg {
+            width: 55%;
+            height: 55%
+        }
+
+        #howto .card h3 {
+            font-size: clamp(14.5px, 2vh, 17px);
+            margin-bottom: 4px
+        }
+
+        #howto .card p {
+            font-size: clamp(12.5px, 1.7vh, 14.5px);
+            line-height: 1.45
+        }
+
+
+        /* ===== How to use — compact steps ===== */
         .steps-row {
             display: grid;
             grid-template-columns: 1fr;
-            gap: 28px;
+            gap: 12px;
             position: relative
-        }
-
-        @media(max-width:860px) {
-            .steps-row {
-                grid-template-columns: 1fr
-            }
         }
 
         .step {
             background: #fff;
             border: 1px solid var(--line);
-            border-radius: 30px;
-            padding: 22px 24px 0;
+            border-radius: 18px;
+            padding: 14px;
             position: relative;
             overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            box-shadow: 0 26px 60px -32px rgba(19, 42, 23, .45);
-            transition: transform .35s ease, box-shadow .35s ease
-        }
-
-        .step:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 34px 70px -32px rgba(19, 42, 23, .5)
-        }
-
-        /* number badge + spark lines */
-        .step .num {
-            position: absolute;
-            top: 20px;
-            left: 24px;
-            z-index: 3;
-            background: var(--green-800);
-            color: #fff;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
             display: grid;
-            place-items: center;
-            font-weight: 800;
-            font-size: 18px;
-            letter-spacing: .5px;
-            font-family: 'Sora', sans-serif;
-            box-shadow: 0 0 0 7px #eaf2e3
+            grid-template-columns: 64px minmax(0, 1fr);
+            column-gap: 14px;
+            align-items: center;
+            box-shadow: var(--shadow-sm);
+            transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease
         }
 
-        .step .spark {
-            position: absolute;
-            top: 24px;
-            left: 88px;
-            z-index: 3;
-            width: 22px;
-            height: 22px;
-            color: var(--green-700)
+        @media(hover:hover) and (pointer:fine) {
+            .step:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 22px 44px -26px rgba(19, 42, 23, .45);
+                border-color: #cfe0bf
+            }
         }
 
-        .step .dots {
-            position: absolute;
-            top: 26px;
-            right: 24px;
-            z-index: 3;
-            width: 74px;
-            height: 46px;
-            background-image: radial-gradient(circle, #c4dab7 2px, transparent 2.1px);
-            background-size: 13px 12px
-        }
-
-        /* photo + soft blobs */
+        /* thumbnail */
         .step .shot {
-            position: relative;
-            margin: 36px 0 0
-        }
-
-        .step .shot .blob {
-            position: absolute;
-            z-index: 0;
-            width: 44%;
-            height: 46%;
-            background: #dcead2;
-            border-radius: 28px
-        }
-
-        .step .shot .b1 {
-            top: -16px;
-            right: -16px
-        }
-
-        .step .shot .b2 {
-            left: -16px;
-            bottom: -16px
-        }
-
-        .step .shot-in {
-            position: relative;
-            z-index: 1;
-            border-radius: 20px;
+            grid-column: 1;
+            grid-row: 1;
+            width: 64px;
+            height: 64px;
+            border-radius: 14px;
             overflow: hidden;
-            aspect-ratio: 16 / 10;
             background: #eef3ee
         }
 
-        .step .shot-in img {
+        .step .shot img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             display: block;
-            transition: transform .55s ease
+            transition: transform .5s cubic-bezier(.23, 1, .32, 1)
         }
 
-        .step:hover .shot-in img {
-            transform: scale(1.06)
+        @media(hover:hover) and (pointer:fine) {
+            .step:hover .shot img {
+                transform: scale(1.06)
+            }
         }
 
-        /* icon + text */
-        .step-body {
+        /* heading row: number chip + title */
+        .step .step-head {
+            grid-column: 2;
+            grid-row: 1;
             display: flex;
-            align-items: flex-start;
-            gap: 16px;
-            padding: 30px 0 32px;
-            flex: 1
-        }
-
-        .step .ico {
-            width: 58px;
-            height: 58px;
-            flex: none;
-            border-radius: 50%;
-            background: #e6f0de;
-            color: var(--green-800);
-            margin: 4px 0 0
-        }
-
-        .step .ico svg {
-            width: 26px;
-            height: 26px
-        }
-
-        .step-txt {
-            border-left: 3px solid var(--green-600);
-            padding-left: 18px;
+            align-items: center;
+            gap: 10px;
             min-width: 0
         }
 
-        .step h3 {
-            font-size: 23px;
-            line-height: 1.2;
-            font-weight: 800;
-            color: var(--green-800);
-            margin: 0
-        }
-
-        .step h3::after {
-            content: "";
-            display: block;
-            width: 56px;
-            height: 4px;
-            border-radius: 3px;
-            background: var(--green-500);
-            margin: 13px 0
-        }
-
-        .step-txt p {
-            margin: 0;
-            font-size: 14.5px;
-            line-height: 1.75;
-            color: var(--muted)
-        }
-
-        /* curved footer band + leaf seal */
-        .step-foot {
-            position: relative;
-            height: 58px;
-            margin: auto -24px 0
-        }
-
-        .step-foot svg.curve {
-            position: absolute;
-            inset: 0;
-            width: 100%;
-            height: 100%;
-            display: block
-        }
-
-        .step-foot .leaf {
-            position: absolute;
-            left: 50%;
-            top: 24px;
-            transform: translate(-50%, -50%);
-            z-index: 2;
-            width: 48px;
-            height: 48px;
+        .step .num {
+            flex: none;
+            background: var(--green-600);
+            color: #fff;
+            width: 24px;
+            height: 24px;
             border-radius: 50%;
-            background: #fff;
-            border: 1px solid #cfe0c4;
             display: grid;
             place-items: center;
-            color: var(--green-600)
+            box-shadow: 0 0 0 3px var(--mint)
         }
 
-        .step-foot .leaf svg {
-            width: 21px;
-            height: 21px
+        .step .num svg {
+            width: 13px;
+            height: 13px
         }
 
-        @media(max-width:520px) {
+        .step h3 {
+            font-size: 16.5px;
+            line-height: 1.3;
+            font-weight: 800;
+            color: var(--green-800);
+            margin: 0;
+            min-width: 0
+        }
+
+        @media(max-width:480px) {
             .step {
-                padding: 20px 18px 0;
-                border-radius: 26px
-            }
-
-            .step .num {
-                width: 46px;
-                height: 46px;
-                font-size: 17px;
-                left: 18px;
-                box-shadow: 0 0 0 6px #eaf2e3
-            }
-
-            .step .spark {
-                left: 76px;
-                top: 22px;
-                width: 20px;
-                height: 20px
-            }
-
-            .step .dots {
-                width: 62px;
-                height: 40px;
-                right: 20px
+                grid-template-columns: 58px minmax(0, 1fr);
+                column-gap: 12px;
+                padding: 11px
             }
 
             .step .shot {
-                margin-top: 36px
-            }
-
-            .step-body {
-                gap: 14px;
-                padding: 28px 0 30px
-            }
-
-            .step .ico {
-                width: 52px;
-                height: 52px
-            }
-
-            .step .ico svg {
-                width: 24px;
-                height: 24px
-            }
-
-            .step-txt {
-                padding-left: 16px
+                width: 58px;
+                height: 58px
             }
 
             .step h3 {
-                font-size: 21px
+                font-size: 15.5px
+            }
+        }
+
+        /* ===== How it works — cream rows with framed photo + check badge ===== */
+        #how {
+            background: #fdfdf2
+        }
+
+        #how .steps-row {
+            gap: clamp(12px, 1.8vh, 18px);
+            max-width: 980px
+        }
+
+        #how .step {
+            grid-template-columns: auto minmax(0, 1fr);
+            column-gap: clamp(16px, 3vw, 34px);
+            background: #fbfaee;
+            border: 1px solid #ece9d6;
+            border-radius: clamp(18px, 2.4vw, 26px);
+            padding: clamp(10px, 1.6vh, 16px);
+            overflow: visible;
+            box-shadow: none
+        }
+
+        @media(hover:hover) and (pointer:fine) {
+            #how .step:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 22px 44px -28px rgba(19, 42, 23, .45);
+                border-color: #ece9d6
+            }
+        }
+
+        /* framed photo */
+        #how .step .shot {
+            position: relative;
+            width: clamp(96px, 14vw, 138px);
+            height: clamp(96px, 14vw, 138px);
+            border-radius: clamp(14px, 1.8vw, 20px);
+            border: 2px solid var(--green-600);
+            overflow: visible
+        }
+
+        #how .step .shot img {
+            border-radius: inherit
+        }
+
+        /* green check badge hanging off the photo */
+        #how .step .num {
+            position: absolute;
+            right: -10px;
+            bottom: -8px;
+            width: clamp(28px, 3.6vw, 38px);
+            height: clamp(28px, 3.6vw, 38px);
+            background: #1f8a3b;
+            border: 3px solid #fff;
+            box-shadow: 0 4px 10px -4px rgba(0, 0, 0, .35)
+        }
+
+        #how .step .num svg {
+            width: 55%;
+            height: 55%
+        }
+
+        /* copy block with green accent bar */
+        #how .step .step-copy {
+            grid-column: 2;
+            grid-row: 1;
+            border-left: 4px solid var(--green-600);
+            padding-left: clamp(12px, 1.6vw, 18px);
+            min-width: 0
+        }
+
+        #how .step h3 {
+            font-size: clamp(17px, 2.6vh, 27px);
+            line-height: 1.25;
+            color: #17321a;
+            margin: 0 0 6px
+        }
+
+        #how .step h3 .g {
+            color: var(--green-600)
+        }
+
+        #how .step p {
+            font-size: clamp(13px, 1.7vh, 16px);
+            line-height: 1.5;
+            color: #5c6b5f;
+            margin: 0
+        }
+
+        /* faint leaf watermark */
+        #how .step-leaf {
+            position: absolute;
+            right: clamp(14px, 3vw, 44px);
+            top: 50%;
+            transform: translateY(-50%);
+            width: clamp(46px, 7vw, 88px);
+            height: auto;
+            color: #cfe3bc;
+            opacity: .55;
+            pointer-events: none
+        }
+
+        @media(max-width:560px) {
+            #how .step-leaf {
+                display: none
             }
 
-            .step h3::after {
-                margin: 12px 0
-            }
-
-            .step-txt p {
-                font-size: 14px
-            }
-
-            .step-foot {
-                margin: auto -18px 0
+            #how .step .step-copy {
+                padding-left: 12px
             }
         }
 
@@ -3758,172 +3755,82 @@
             <div class="wrap center">
                 <div class="eyebrow reveal">How It Works</div>
                 <h2 class="h2 reveal">शरीर और मन को support देने के लिए एक balanced approach</h2>
-                <p class="lead reveal d1">AyurVani अकेले काम करने के लिए नहीं — बल्कि एक अच्छी daily routine के साथ
-                    मिलकर
-                    support करने के लिए बनाया गया है।</p>
+                <p class="lead reveal d1">AyurVani अकेले काम करने के लिए नहीं — एक अच्छी daily routine के साथ
+                    मिलकर support करने के लिए बनाया गया है। इसकी herbs पारंपरिक रूप से इन चीज़ों में support के लिए
+                    जानी जाती हैं:</p>
             </div>
-            <div class="wrap steps-row" style="margin-top:52px">
+            <div class="wrap steps-row" style="margin-top:26px">
                 <div class="step reveal">
-                    <span class="num">01</span>
-                    <svg class="spark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"
-                        stroke-linecap="round" aria-hidden="true">
-                        <path d="M3.5 6.5 10 3M4 12h7M3.5 17.5 10 21" />
-                    </svg>
-                    <span class="dots" aria-hidden="true"></span>
                     <div class="shot">
-                        <span class="blob b1" aria-hidden="true"></span>
-                        <span class="blob b2" aria-hidden="true"></span>
-                        <div class="shot-in">
-                            <img src="./images/9.avif" width="450" height="281" loading="lazy" decoding="async"
-                                alt="माता-पिता और बच्चे मिलकर healthy खाना तैयार करते हुए — AyurVani daily routine support">
-                        </div>
-                    </div>
-                    <div class="step-body">
-                        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round">
-                                <rect x="3" y="4" width="18" height="18" rx="2" />
-                                <path d="M16 2v4M8 2v4M3 10h18" />
-                            </svg></div>
-                        <div class="step-txt">
-                            <h3>Daily Routine</h3>
-                            <p>बच्चे के regular food, sleep, study और play के साथ एक तय daily routine — यही पूरी approach की नींव है।</p>
-                        </div>
-                    </div>
-                    <div class="step-foot">
-                        <svg class="curve" viewBox="0 0 400 66" preserveAspectRatio="none" aria-hidden="true">
-                            <path d="M0 8 Q200 42 400 8 L400 66 L0 66 Z" fill="#e7f0df" />
-                        </svg>
-                        <span class="leaf">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                        <img src="./images/8.avif" width="450" height="281" loading="lazy" decoding="async"
+                            alt="शांत और calm mood में बैठा बच्चा — mental calm support">
+                        <span class="num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"
                                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                <path
-                                    d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" />
-                                <path d="M2 21c0-3 1.85-5.36 5.08-6" />
-                            </svg>
-                        </span>
+                                <path d="m5 12.5 4.5 4.5L19 7" />
+                            </svg></span>
                     </div>
+                    <div class="step-copy">
+                        <h3><span class="g">Mind</span> को calm रखने</h3>
+                        <p>Daily routine में calmness और relaxation को support करने के लिए।</p>
+                    </div>
+                    <svg class="step-leaf" viewBox="0 0 64 64" fill="currentColor" aria-hidden="true">
+                        <path
+                            d="M56 8C30 8 12 20 12 40c0 6 2 11 5 15l-6 6 4 4 6-6c4 3 9 5 15 5 20 0 24-24 24-44 0-6-1-10-4-12ZM20 52c0-16 12-28 30-32C44 36 34 48 20 52Z" />
+                    </svg>
                 </div>
                 <div class="step reveal d1">
-                    <span class="num">02</span>
-                    <svg class="spark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"
-                        stroke-linecap="round" aria-hidden="true">
-                        <path d="M3.5 6.5 10 3M4 12h7M3.5 17.5 10 21" />
-                    </svg>
-                    <span class="dots" aria-hidden="true"></span>
                     <div class="shot">
-                        <span class="blob b1" aria-hidden="true"></span>
-                        <span class="blob b2" aria-hidden="true"></span>
-                        <div class="shot-in">
-                            <img src="./images/8.avif" width="450" height="281" loading="lazy" decoding="async"
-                                alt="मुस्कुराते parents अपने बच्चे को fresh salad खिलाते हुए — herbal और nutritional support">
-                        </div>
-                    </div>
-                    <div class="step-body">
-                        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round">
-                                <path
-                                    d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" />
-                            </svg></div>
-                        <div class="step-txt">
-                            <h3>Brahmi + Ashwagandha</h3>
-                            <p>Brahmi, Ashwagandha और Jatamansi — पारंपरिक रूप से calm और focus के लिए जानी जाने वाली
-                                herbs का balanced blend।</p>
-                        </div>
-                    </div>
-                    <div class="step-foot">
-                        <svg class="curve" viewBox="0 0 400 66" preserveAspectRatio="none" aria-hidden="true">
-                            <path d="M0 8 Q200 42 400 8 L400 66 L0 66 Z" fill="#e7f0df" />
-                        </svg>
-                        <span class="leaf">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                        <img src="./images/9.avif" width="450" height="281" loading="lazy" decoding="async"
+                            alt="पढ़ाई पर ध्यान लगाते हुए बच्चा — focus support">
+                        <span class="num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"
                                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                <path
-                                    d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" />
-                                <path d="M2 21c0-3 1.85-5.36 5.08-6" />
-                            </svg>
-                        </span>
+                                <path d="m5 12.5 4.5 4.5L19 7" />
+                            </svg></span>
                     </div>
+                    <div class="step-copy">
+                        <h3><span class="g">Focus</span> को support करने</h3>
+                        <p>Study और daily activities में attention को support करने के लिए।</p>
+                    </div>
+                    <svg class="step-leaf" viewBox="0 0 64 64" fill="currentColor" aria-hidden="true">
+                        <path
+                            d="M56 8C30 8 12 20 12 40c0 6 2 11 5 15l-6 6 4 4 6-6c4 3 9 5 15 5 20 0 24-24 24-44 0-6-1-10-4-12ZM20 52c0-16 12-28 30-32C44 36 34 48 20 52Z" />
+                    </svg>
                 </div>
                 <div class="step reveal d2">
-                    <span class="num">03</span>
-                    <svg class="spark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"
-                        stroke-linecap="round" aria-hidden="true">
-                        <path d="M3.5 6.5 10 3M4 12h7M3.5 17.5 10 21" />
-                    </svg>
-                    <span class="dots" aria-hidden="true"></span>
                     <div class="shot">
-                        <span class="blob b1" aria-hidden="true"></span>
-                        <span class="blob b2" aria-hidden="true"></span>
-                        <div class="shot-in">
-                            <img src="./images/10.avif" width="450" height="281" loading="lazy" decoding="async"
-                                alt="पार्क में दौड़ते-खेलते बच्चे और पीछे चलते parents — Amla, Giloy और Haldi जैसी आयुर्वेदिक herbs की daily routine">
-                        </div>
-                    </div>
-                    <div class="step-body">
-                        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-                            </svg></div>
-                        <div class="step-txt">
-                            <h3>Amla + Giloy + Haldi</h3>
-                            <p>Label पर दिए recommended dosage के अनुसार — antioxidant-rich आयुर्वेदिक herbs रोज़ की
-                                routine का हिस्सा।</p>
-                        </div>
-                    </div>
-                    <div class="step-foot">
-                        <svg class="curve" viewBox="0 0 400 66" preserveAspectRatio="none" aria-hidden="true">
-                            <path d="M0 8 Q200 42 400 8 L400 66 L0 66 Z" fill="#e7f0df" />
-                        </svg>
-                        <span class="leaf">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                        <img src="./images/10.avif" width="450" height="281" loading="lazy" decoding="async"
+                            alt="आत्मविश्वास के साथ बात करता बच्चा — बोलने का confidence">
+                        <span class="num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"
                                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                <path
-                                    d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" />
-                                <path d="M2 21c0-3 1.85-5.36 5.08-6" />
-                            </svg>
-                        </span>
+                                <path d="m5 12.5 4.5 4.5L19 7" />
+                            </svg></span>
                     </div>
+                    <div class="step-copy">
+                        <h3>बोलते समय <span class="g">confidence</span> बढ़ाने</h3>
+                        <p>Communication के दौरान confidence को support करने के लिए।</p>
+                    </div>
+                    <svg class="step-leaf" viewBox="0 0 64 64" fill="currentColor" aria-hidden="true">
+                        <path
+                            d="M56 8C30 8 12 20 12 40c0 6 2 11 5 15l-6 6 4 4 6-6c4 3 9 5 15 5 20 0 24-24 24-44 0-6-1-10-4-12ZM20 52c0-16 12-28 30-32C44 36 34 48 20 52Z" />
+                    </svg>
                 </div>
                 <div class="step reveal d3">
-                    <span class="num">04</span>
-                    <svg class="spark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"
-                        stroke-linecap="round" aria-hidden="true">
-                        <path d="M3.5 6.5 10 3M4 12h7M3.5 17.5 10 21" />
-                    </svg>
-                    <span class="dots" aria-hidden="true"></span>
                     <div class="shot">
-                        <span class="blob b1" aria-hidden="true"></span>
-                        <span class="blob b2" aria-hidden="true"></span>
-                        <div class="shot-in">
-                            <img src="./images/11.avif" width="450" height="281" loading="lazy" decoding="async"
-                                alt="पढ़ाई करते बच्चे के साथ खड़े माता-पिता — complete child support और parental guidance">
-                        </div>
-                    </div>
-                    <div class="step-body">
-                        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round">
-                                <path
-                                    d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
-                            </svg></div>
-                        <div class="step-txt">
-                            <h3>Complete Child Support</h3>
-                            <p>एक अच्छी routine, healthy diet और (ज़रूरत होने पर) professional guidance के साथ एक
-                                complementary आयुर्वेदिक product।</p>
-                        </div>
-                    </div>
-                    <div class="step-foot">
-                        <svg class="curve" viewBox="0 0 400 66" preserveAspectRatio="none" aria-hidden="true">
-                            <path d="M0 8 Q200 42 400 8 L400 66 L0 66 Z" fill="#e7f0df" />
-                        </svg>
-                        <span class="leaf">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                        <img src="./images/11.avif" width="450" height="281" loading="lazy" decoding="async"
+                            alt="माता-पिता के साथ सहज महसूस करता बच्चा — nervousness कम">
+                        <span class="num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5"
                                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                <path
-                                    d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" />
-                                <path d="M2 21c0-3 1.85-5.36 5.08-6" />
-                            </svg>
-                        </span>
+                                <path d="m5 12.5 4.5 4.5L19 7" />
+                            </svg></span>
                     </div>
+                    <div class="step-copy">
+                        <h3><span class="g">Nervousness</span> कम महसूस करने</h3>
+                        <p>Speaking और social situations में relaxed feel करने में support।</p>
+                    </div>
+                    <svg class="step-leaf" viewBox="0 0 64 64" fill="currentColor" aria-hidden="true">
+                        <path
+                            d="M56 8C30 8 12 20 12 40c0 6 2 11 5 15l-6 6 4 4 6-6c4 3 9 5 15 5 20 0 24-24 24-44 0-6-1-10-4-12ZM20 52c0-16 12-28 30-32C44 36 34 48 20 52Z" />
+                    </svg>
                 </div>
             </div>
         </section>
@@ -4130,12 +4037,11 @@
         </section>
 
         <!-- HOW TO USE -->
-        <section class="pad soft">
+        <section class="pad soft" id="howto">
             <div class="wrap center">
                 <div class="eyebrow reveal">Usage</div>
                 <h2 class="h2 reveal">AyurVani को कैसे लें?</h2>
-                <p class="lead reveal d1">हमेशा product label पर दिए गए निर्देशों का पालन करें। नीचे दी जानकारी general
-                    guidance के लिए है।</p>
+                <p class="lead reveal d1">हमेशा product label के निर्देशों का पालन करें।</p>
             </div>
             <div class="wrap grid g4" style="margin-top:44px">
                 <div class="card reveal">
@@ -4175,23 +4081,7 @@
                     <p>एक regular routine के साथ इस्तेमाल करने पर सबसे अच्छा।</p>
                 </div>
             </div>
-            <div class="wrap" style="margin-top:32px">
-                <div class="notice reveal">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" />
-                        <path d="m9 12 2 2 4-4" />
-                    </svg>
-                    <div>
-                        <p style="margin-bottom:8px"><b>Parent Safety Notes:</b></p>
-                        <p>• Recommended dose से अधिक न दें। &nbsp;• Label की instructions ज़रूर follow करें। &nbsp;•
-                            अगर
-                            बच्चा कोई medication ले रहा है या कोई medical condition है, तो देने से पहले healthcare
-                            professional से सलाह लें। &nbsp;• किसी भी चल रहे medical treatment को AyurVani के कारण बंद न
-                            करें।</p>
-                    </div>
-                </div>
-            </div>
+          
         </section>
 
         <!-- TRUST / CERTIFICATIONS -->
@@ -4347,11 +4237,11 @@
                             </svg>
                         </span>
                     </div>
-                    <blockquote>“हम अपने बच्चे के लिए ऐसा <em class="hl">herbal daily supplement</em> ढूंढ रहे थे जिसे
-                        उसकी <em class="hl">daily routine</em> में आसानी से शामिल किया जा सके। Product की information और
-                        ingredients को समझने के बाद हमने AyurVani को अपनी <em class="hl">routine</em> का हिस्सा बनाया।
-                        हमें सबसे अच्छा लगा कि product के बारे में information clearly दी गई थी और इसे use करना भी आसान
-                        लगा। Overall, हमें एक simple और transparent wellness support option मिला।”</blockquote>
+                    <blockquote>“हमारे बच्चे को बोलते समय बार-बार <em class="hl">हकलाने</em> और शब्दों को दोहराने की परेशानी
+                        होती थी। कुछ समय बाद हमें लगा कि वह पहले की तुलना में बोलते समय ज्यादा <em
+                            class="hl">comfortable</em> है और अपनी बात पूरी करने में कम hesitation करता है। हमारे लिए
+                        सबसे अच्छी बात यह रही कि बोलने को लेकर उसका <em class="hl">confidence</em> भी पहले से बेहतर
+                        महसूस हुआ।”</blockquote>
                     <figcaption class="who">
                         <span class="av photo">
                             <img src="./images/Client2.avif" width="315" height="450" loading="lazy" decoding="async"
@@ -4381,11 +4271,12 @@
                             </svg>
                         </span>
                     </div>
-                    <blockquote>“हम किसी भी product को बिना पूरी जानकारी के शुरू नहीं करना चाहते थे। AyurVani के बारे
-                        में पढ़ते समय हमें अच्छा लगा कि brand ने साफ बताया कि product क्या है और क्या नहीं। बड़े-बड़े
-                        claims के बजाय honest <em class="hl">wellness support</em> की approach ने हमें ज्यादा
-                        comfortable feel कराया। Product की जानकारी समझने के बाद इसे अपने बच्चे की <em
-                            class="hl">routine</em> में शामिल करना हमारे लिए आसान रहा।”</blockquote>
+                    <blockquote>“हमारे बच्चे को <em class="hl">तुतलाकर</em> बोलने और कुछ शब्द साफ़ न बोल पाने की परेशानी थी।
+                        AyurVani को उसकी daily <em class="hl">routine</em> का हिस्सा बनाने के साथ हमने उसकी
+                        speech पर भी ध्यान देना शुरू किया। हमें धीरे-धीरे लगा कि कुछ words वह पहले से ज्यादा <em
+                            class="hl">clearly</em> बोलने की कोशिश कर रहा है और दूसरों के सामने बात करने में <em
+                            class="hl">hesitation कम</em> दिखाई देता है। एक parent के तौर पर यह बदलाव हमारे लिए काफी
+                        encouraging रहा।”</blockquote>
                     <figcaption class="who">
                         <span class="av photo">
                             <img src="./images/Client1.avif" width="315" height="438" loading="lazy" decoding="async"
@@ -4416,12 +4307,12 @@
                             </svg>
                         </span>
                     </div>
-                    <blockquote>“हमारी सबसे बड़ी concern <em class="hl">ingredients</em> और usage को लेकर थी। AyurVani
-                        में दिए गए Ayurvedic ingredients को देखकर और support team से usage की जानकारी लेने के बाद हमें
-                        ज्यादा clarity मिली। Team ने हमारी queries को patiently समझाया और product को <em
-                            class="hl">routine</em> में शामिल करना आसान रहा। Overall हमारा experience अच्छा रहा और हमें
-                        लगा कि सही <em class="hl">information</em> और guidance parents के लिए बहुत जरूरी है।”
-                    </blockquote>
+                    <blockquote>“हमारा बच्चा पहले बोलते समय कई बार <em class="hl">रुक जाता</em> था और अपनी बात पूरी करने में
+                        काफी समय लेता था। हमने AyurVani को daily Ayurvedic support के रूप में अपनी <em
+                            class="hl">routine</em> में शामिल किया और उसकी regular speech practice और communication पर
+                        भी ध्यान दिया। समय के साथ हमें लगा कि वह बातचीत में ज्यादा <em class="hl">confidently
+                            participate</em> करने लगा है और अपनी बात पहले से ज्यादा आसानी से <em
+                            class="hl">express</em> करता है। Overall experience हमारे लिए positive रहा।”</blockquote>
                     <figcaption class="who">
                         <span class="av photo">
                             <img src="./images/Client3.avif" width="450" height="450" loading="lazy" decoding="async"
